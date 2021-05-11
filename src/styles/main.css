@@ -1,9 +1,10 @@
 .main-section {
-    
-
+    background-color: #fcf6ec;
 }
 
 .food-delivery {
+    left: 0;
+    right: 0;
     background-image: url(../img/png/head-bground.png);
     background-repeat: no-repeat;
     padding: 200px 0;
@@ -19,33 +20,36 @@
 
 .food-delivery-info h1{
     font-family: 'Barlow', sans-serif;
-    font-size: 78px;
+    font-size: 4em;
     color: #4b4f69;
     text-align: center;
+    font-weight: 900;
 }
 
-.food-delivery-info span {
-    font-family: 'Roboto', sans-serif;
-    font-size: 19px;
-    font-weight: bold;
-    color: #6f7490;
-    text-align: center;
+.food-delivery-info .description-text {
     padding: 40px;
 }
 
-.food-delivery-info a {
-    text-decoration: none;
-    padding: 20px 30px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-    font-weight: bold;
-    background-color: #3dc491;
-    color: #ffffff;
-    border-radius: 5px;
+.food-delivery-info .button-link {
     width: 100px;
     text-align: center;
 }
 
 .about-us {
     padding: 100px 0 60px;
+    display: flex;
+    flex-direction: row;
+}
+
+#aboutus {
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+}
+
+.price {
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.4em;
+    color: #ff775e;
+    font-weight: 400;
 }

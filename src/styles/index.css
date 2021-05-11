@@ -1,3 +1,53 @@
 * {
     margin: 0;
 }
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('/src/fonts/roboto/Roboto-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Barlow';
+    src: url('/src/fonts/barlow/Barlow-Bold.ttf'),
+        url('/src/fonts/barlow/Barlow-Medium.ttf');
+}
+
+.heading-title {
+    font-family: 'Barlow', sans-serif;
+    font-size: 3em;
+    color: #298a65;
+    font-weight: 900;
+}
+
+.description-text {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 1.18em;
+    color: #6f7490;
+}
+
+.button-link {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #3dc491;
+    border-radius: 5px;
+    padding: 20px 30px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.description-steps {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.05em;
+    color: #6f7490;
+}
+
+.categories-title {
+    font-family: 'Barlow', sans-serif;
+    font-size: 2em;
+    color: #3dc491;
+    font-weight: bold;
+}
