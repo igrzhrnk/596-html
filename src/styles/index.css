@@ -56,3 +56,17 @@
     color: #3dc491;
     font-weight: 700;
 }
+
+.date-of-publication {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #3dc491;
+    font-weight: bold;
+}
+
+.ordered-steps {
+    font-family: 'Barlow-Bold', sans-serif;
+    font-size: 36px;
+    color: #3dc491;
+
+}

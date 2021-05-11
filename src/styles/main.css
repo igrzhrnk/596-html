@@ -12,17 +12,12 @@
 
 .food-delivery-info {
     padding: 0 90px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: flex-end;
 }
 
 .food-delivery-info h1{
     font-family: 'Barlow-Bold', sans-serif;
     font-size: 4em;
     color: #4b4f69;
-    text-align: center;
     font-weight: 900;
 }
 
@@ -32,18 +27,13 @@
 
 .food-delivery-info .button-link {
     width: 100px;
-    text-align: center;
 }
 
 .about-us {
     padding: 100px 0 60px;
-    display: flex;
-    flex-direction: row;
 }
 
 #aboutus {
-    display: flex;
-    flex-direction: column;
     padding-left: 50px;
 }
 
@@ -52,4 +42,38 @@
     font-size: 22px;
     font-weight: 400;
     color: #ff775e;
+}
+
+
+.users-feedback {
+    padding: 35px 40px 50px 40px;
+    height: 500px;
+}
+
+.users-feedback-item {
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    padding: 30px;
+    margin: 15px;
+}
+
+.users-feedback-title {
+    font-family: 'Barlow', sans-serif;
+    font-size: 22px;
+    color: #4b4f69;
+    font-weight: 700;
+}
+
+.users-feedback-item-photo {
+    overflow: hidden;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.users-feedback-item-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
