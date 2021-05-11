@@ -1,0 +1,39 @@
+.head-section {
+    font-family: 'Roboto', sans-serif;
+    padding: 30px 40px;
+    display: flex;
+}
+
+.fo-logo {
+    display: inline;
+}
+
+.fo-logo img {
+    width: 95px;
+    height: 85px;
+}
+
+.nav-list {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.nav-list li {
+    list-style: none;
+    padding: 5px;
+    display: inline;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #6f7490;
+}
+
+.nav-list a:hover {
+    color: #3dc491;
+}
+
+.social-net-list li {
+    list-style: none;
+    display: inline;
+}

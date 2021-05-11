@@ -5,39 +5,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Food Ordered</title>
-    <link rel="shortcut icon" href="src/img/fivicon.png" type="image/x-icon">
+    <title>Food Order</title>
+    <link rel="icon" href="src/img/png/fivicon.png" type="image/png">
+    <link rel="stylesheet" href="src/styles/index.css">
+    <link rel="stylesheet" href="src/styles/head.css">
+    <link rel="stylesheet" href="src/styles/main.css">
+    <link rel="stylesheet" href="src/styles/footer.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@900&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <nav>
-            <a href="#home"><img src="src/img/fo-logo.webp" alt="Food Order New York"></a>
-            <ul>
+    <header class="head-section">
+        <div class="fo-logo">
+            <a href="#home"><img src="src/img/webp/fo-logo.webp" alt="Food Order New York"></a>
+        </div>
+
+        <nav class="nav-section">
+            <ul class="nav-list">
                 <li><a href="#aboutus">About Us</a></li>
                 <li><a href="#categories">Categories</a></li>
                 <li><a href="#deals">Best Deals</a></li>
                 <li><a href="#how-it-work">How to order</a></li>
-
             </ul>
-            <ul>
-                <li><a href="https://facebook.com"><img src="src/img/facebook.svg" alt="facebook"></a></li>
-                <li><a href="https://instagram.com"><img src="src/img/instagram.svg" alt="instagram"></a></li>
-                <li><a href="https://youtube.com"><img src="src/img/youtube.svg" alt="youtube"></a></li>
+            <ul class="social-net-list">
+                <li><a href="https://facebook.com"><object data="src/img/svg/facebook.svg" type="image/svg+xml"></object></a></li>
+                <li><a href="https://instagram.com"><img src="src/img/svg/instagram.svg" alt="instagram"></a></li>
+                <li><a href="https://youtube.com"><img src="src/img/svg/youtube.svg" alt="youtube"></a></li>
             </ul>
         </nav>
 
     </header>
 
-    <main id="home">
-        <section>
-            <div>
+    <main class="main-section" id="home">
+
+        <section class="food-delivery">
+            <div class="food-delivery-info">
                 <h1>Quick Food Delivery From the Best NY Restaurants.</h1>
                 <span>Get your favorite dishes delivered to your doorstep. We cover all New York districts.</span>
                 <a href="#how-it-work">Learn More</a>
             </div>
         </section>
-        <section>
+        <section class="about-us">
             <div id="aboutus">
                 <h2>Order Food From Any of 400+ Restaurants.</h2>
                 <hr>
@@ -379,9 +389,11 @@
             <a href="src/pgs/sendmail.html">Become a Partner</a>
             <img src="src/img/illustration.webp" alt="">
         </section>
+
     </main>
 
     <footer>
+
         <div>
             <a href="#home"><img src="src/img/fo-logo.webp" alt="Food Order New York"></a>
             <span>Get your favorite dishes from the best New York restaurants delivered to you place. We'll deliver your
@@ -430,6 +442,7 @@
                 </ul>
             </div>
         </div>
+
     </footer>
 
 </body>

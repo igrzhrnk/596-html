@@ -1,0 +1,51 @@
+.main-section {
+    
+
+}
+
+.food-delivery {
+    background-image: url(../img/png/head-bground.png);
+    background-repeat: no-repeat;
+    padding: 200px 0;
+}
+
+.food-delivery-info {
+    padding: 0 90px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.food-delivery-info h1{
+    font-family: 'Barlow', sans-serif;
+    font-size: 78px;
+    color: #4b4f69;
+    text-align: center;
+}
+
+.food-delivery-info span {
+    font-family: 'Roboto', sans-serif;
+    font-size: 19px;
+    font-weight: bold;
+    color: #6f7490;
+    text-align: center;
+    padding: 40px;
+}
+
+.food-delivery-info a {
+    text-decoration: none;
+    padding: 20px 30px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #3dc491;
+    color: #ffffff;
+    border-radius: 5px;
+    width: 100px;
+    text-align: center;
+}
+
+.about-us {
+    padding: 100px 0 60px;
+}
