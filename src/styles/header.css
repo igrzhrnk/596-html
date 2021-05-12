@@ -1,0 +1,50 @@
+.header-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 16px;
+    font-family: Roboto, sans-serif;
+    font-weight: bold;
+    color: #6f7490;
+    padding: 30px 40px;
+    height: 85px;
+}
+
+.fo-logo {
+   width: 98px;
+   height: 85px;
+}
+
+.fo-logo img {
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+}
+
+.nav-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.nav-menu-item {
+    color: var(--light-gray);
+    text-decoration: none;
+}
+
+.social-net {
+    flex-direction: row;
+}
+
+@media (max-width: 800px) {
+    .fo-logo {
+        width: 98px;
+        height: 85px;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+    }
+}

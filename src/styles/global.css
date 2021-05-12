@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url('/src/fonts/roboto/Roboto-Regular.ttf');
+}
+
+@font-face {
+    font-family: Barlow;
+    src: url('/src/fonts/barlow/Barlow-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Barlow-Bold';
+    src: url('/src/fonts/barlow/Barlow-Bold.ttf');
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --darck-green: #298065;
+    --light-green: #3dc491;
+    --dark-gray: #4b4f69;
+    --light-gray: #6f7490;
+}
+
+.title-description {
+    font-size: 50px;
+    font-family: Barlow-Bold, sans-serif;
+    font-weight: bold;
+    color: var(--darck-green);
+}
+
+.group-description {
+    font-size: 24px;
+    font-family: Barlow-Bold, sans-serif;
+    font-weight: bold;
+    color: var(--light-green);
+}
+
+.short-text-description {
+    font-size: 19px;
+    font-family: Roboto, sans-serif;
+    font-weight: bold;
+    color: var(--light-gray);
+}
+
+.text-description {
+    font-size: 17px;
+    font-family: Roboto, sans-serif;
+    color: var(--light-gray);
+}
+
+.number-value {
+    font-size: 24px;
+    font-family: Barlow, sans-serif;
+    font-weight: bold;
+    color: #ff775e;
+}
+
+.button-link {
+    font-size: 14px;
+    font-family: Roboto, sans-serif;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: var(--light-green);
+    border-radius: 5px;
+    padding: 20px 30px;
+    text-decoration: none;
+}
+
+.feedback-user-name {
+    font-size: 24px;
+    font-family: Barlow, sans-serif;
+    font-weight: bold;
+    color: var(--dark-gray);
+}
+
+.feedback-date {
+    font-size: 15px;
+    font-family: Roboto, sans-serif;
+    font-weight: bold;
+    color: var(--light-green);
+}
+
+.shrot-black-line {
+    width: 40px;
+    height: 3px;
+    background-color: var(--light-gray);
+}
+
+.short-green-line {
+    width: 40px;
+    height: 3px;
+    background-color: var(--light-green);
+}
+
+.transparent-botton {
+    font-size: 15px;
+    font-family: Roboto, sans-serif;
+    font-weight: bold;
+    color: var(--light-green);
+    background-color: transparent;
+}
