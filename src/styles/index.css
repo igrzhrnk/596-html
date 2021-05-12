@@ -17,9 +17,20 @@
     src: url('/src/fonts/barlow/Barlow-Bold.ttf');
 }
 
+.heading-group {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.heading-group img {
+    width: 120px;
+    height: 120px;
+}
+
 .heading-title {
     font-family: 'Barlow-Bold', sans-serif;
-    font-size: 38px;
+    font-size: 50px;
     font-weight: bold;
     color: #298a65;
     text-align: center;
@@ -30,6 +41,7 @@
     font-weight: bold;
     font-size: 19px;
     color: #6f7490;
+    text-align: center;
 }
 
 .description-steps {
@@ -52,9 +64,10 @@
 
 .categories-title {
     font-family: 'Barlow', sans-serif;
-    font-size: 22px;
+    font-size: 24px;
     color: #3dc491;
     font-weight: 700;
+    text-align: center;
 }
 
 .date-of-publication {
@@ -70,3 +83,16 @@
     color: #3dc491;
 
 }
+
+.green-short-line {
+    width: 40px;
+    height: 3px;
+    background-color: #298a65;
+    align-self: center;
+}
+
+.small-svg {
+    width: 60px;
+    height: 60px;
+}
+
