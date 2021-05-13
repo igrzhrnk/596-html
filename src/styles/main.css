@@ -36,21 +36,3 @@
     font-family: Roboto, sans-serif;
     color: var(--light-gray);
 }
-
-.nav-menu {
-    list-style: none;
-}
-
-.nav-menu-list {
-    list-style: none;
-    font-weight: bold;
-}
-
-.nav-menu-list a {
-    color: var(--light-gray);
-    text-decoration: none;
-}
-
-.social-net-list {
-    list-style: none;
-}

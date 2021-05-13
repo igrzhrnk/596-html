@@ -1,9 +1,38 @@
-.footer-section {
-    display: flex;
+.bottom-section {
+    display: block;
+    text-align: center;
+    font-size: 17px;
+    font-family: Roboto, sans-serif;
+    color: var(--light-gray);
 }
 
-.nav-menu {
-    display: flex;
-    flex-direction: row;
+.section-separate {
+    background-color: #2c2e38;
+    opacity: 0.2;
+    justify-self: center;
+}
+
+.right-section {
+    text-align: center;
+    font-size: 12px;
+}
+
+.right-title {
+    display: block;
+    padding: 15px 0 10px 0;
+}
+
+@media (min-width: 800px) {
+    .bottom-section {
+        display: flex;
+        flex-direction: row;
+        padding: 30px 0;
+        font-size: 15px;
+    }
+    .right-section {
+        display: flex;
+        flex-direction: row;
+    }
+
 }
 
