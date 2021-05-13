@@ -10,6 +10,11 @@
 }
 
 @font-face {
+    font-family: Roboto-Medium;
+    src: url('/src/fonts/roboto/Roboto-Medium.ttf');
+}
+
+@font-face {
     font-family: Barlow;
     src: url('/src/fonts/barlow/Barlow-Regular.ttf');
 }
@@ -47,6 +52,7 @@
     font-family: Barlow-Bold, sans-serif;
     font-weight: bold;
     color: var(--light-green);
+    padding: 40px 0;
 }
 
 .short-text-description {
@@ -94,7 +100,7 @@
     color: var(--light-green);
 }
 
-.shrot-black-line {
+.short-black-line {
     width: 40px;
     height: 3px;
     background-color: var(--light-gray);
@@ -112,14 +118,4 @@
     font-weight: bold;
     color: var(--light-green);
     background-color: transparent;
-}
-
-.social-net {
-    padding: 20px 0;
-}
-
-.social-net li {
-    display: inline;
-    list-style: none;
-    padding: 0 6px;
 }
