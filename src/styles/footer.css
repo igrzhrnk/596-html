@@ -4,10 +4,12 @@
     font-size: 17px;
     font-family: Roboto-Medium, sans-serif;
     color: var(--light-gray);
+    margin: 0 40px;
 }
 
 .sitemap-nav-menu {
     display: block;
+    padding: 60px 24px 35px;
 }
 
 .bottom-logo-descr {
@@ -17,6 +19,7 @@
 .bottom-logo {
     display: grid;
     grid-template-rows: repeat(3, 1fr);
+    padding: 60px 24px 35px;
 }
 
 .bottom-logo a {
@@ -67,6 +70,8 @@
     font-family: 'Roboto';
     text-align: center;
     font-size: 12px;
+    margin: 0 39px;
+    padding: 15px;
 }
 
 .right-title {
@@ -83,25 +88,22 @@
     padding: 20px 0 5px;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 1000px) {
     .sitemap-section {
         display: grid;
-        grid-template-columns: 470px 1fr;
+        grid-template-columns: 1fr 650px;
         grid-template-rows: 300px 3px 20px;
         font-size: 15px;
-        column-gap: 20px;
     }
 
     .sitemap-nav-menu {
         grid-row: 1;
         grid-column: 2;
         width: 100%;
-    }
-
-    .sitemap-nav-menu {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: 180px 180px 270px;
         grid-template-rows: 50px 1fr;
+        text-align: left;
     }
 
     .sitemap-nav-menu .site-map {
@@ -123,13 +125,13 @@
         grid-column: 3;
     }
 
+    .bottom-nav-menu-item a:hover {
+        color: var(--light-green);
+    }
+
     .sitemap-nav-menu .question {
         grid-row: 1;
         grid-column: 3;
-        text-align: left;
-    }
-
-    .sitemap-nav-menu {
         text-align: left;
     }
 
@@ -138,17 +140,31 @@
     }
 
     .right-section {
+        grid-column: 1 / 5;
         display: flex;
         flex-direction: row;
-        justify-content: center;
-        align-content: space-between;
         flex: 1;
-        grid-column: 1 / 5;
+        justify-content: space-between;
+        text-align: center;
+        margin: 0 39px;
+        padding: 15px;
+    }
+
+    .sright-section {
+        display: flex;
+        flex-direction: row;
+        flex: 1;
+        text-align: center;
+        justify-content: flex-end;
+        align-content: center;
     }
     
     .section-separate {
         grid-column: 1 / 5;
         height: 1px;
+        margin: 0 40px;
+        background-color: #2c2e38;
+        opacity: 0.2;
     }
 
     .bottom-logo {
@@ -169,7 +185,5 @@
     .app-button-link {
         grid-row: 3;
         grid-column: 1;
-
     }
-
 }

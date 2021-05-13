@@ -5,7 +5,8 @@
     font-family: Roboto, sans-serif;
     font-weight: bold;
     color: var(--light-gray);
-    padding: 30px 10px;
+    padding: 30px 15px;
+    margin: 0 40px;
     height: 85px;
 }
 
@@ -42,7 +43,7 @@
     padding: 0 6px;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 1000px) {
     .top-section {
         display: flex;
         flex-direction: row;
@@ -81,7 +82,6 @@
     }
 
     .top-nav-menu-item a:hover {
-        height: 100%;
         color: var(--light-green);
     }
 

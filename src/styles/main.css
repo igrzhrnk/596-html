@@ -1,11 +1,12 @@
 .main-section {
     background-color: #fcf6ec;
+    display: block;
 }
 
 .grand-description {
-    font-size: 78px;
+    font-size: 56px;
     font-family: 'Barlow-Bold', sans-serif;
-    font-weight: bold;
+    font-weight: 900;
     color: var(--dark-gray);
 }
 
@@ -13,8 +14,13 @@
     background-image: url('/src/img/png/head-bground.png');
     background-repeat: no-repeat;
     background-size: cover;
-    width: 500px;
-    height: 480px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-between;
+    text-align: center;
+    flex-wrap: wrap;
+    padding: 200px 0;
 }
 
 .work-step-title {
@@ -31,8 +37,9 @@
     background-color: #fcf6ec;
 }
 
-.footer-section {
-    font-size: 15px;
-    font-family: Roboto, sans-serif;
-    color: var(--light-gray);
+@media (min-width: 1000px) {
+    .grand-description {
+        font-size: 78px;
+        font-weight: bold;
+    }
 }

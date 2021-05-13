@@ -20,7 +20,7 @@
 }
 
 @font-face {
-    font-family: 'Barlow-Bold';
+    font-family: Barlow-Bold;
     src: url('/src/fonts/barlow/Barlow-Bold.ttf');
 }
 
@@ -29,15 +29,6 @@
     --light-green: #3dc491;
     --dark-gray: #4b4f69;
     --light-gray: #6f7490;
-    padding-left: 24px;
-    padding-right: 24px;
-}
-
-@media (min-width: 800px) {
-    :root {
-        padding-left: 160px;
-        padding-right: 160px;
-    }
 }
 
 .title-description {
@@ -82,8 +73,9 @@
     color: #ffffff;
     background-color: var(--light-green);
     border-radius: 5px;
-    padding: 20px 30px;
+    padding: 20px 10px;
     text-decoration: none;
+    width: 158px;
 }
 
 .feedback-user-name {
