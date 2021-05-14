@@ -1,27 +1,91 @@
 .main-section {
-    background-color: #fcf6ec;
     display: block;
+    background-color: #fcf6ec;
+}
+
+.food-delivery {
+    background-image: url("/src/img/png/head-bground.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-rows: 3;
+    padding: 200px 0 100px;
+    margin: auto;
 }
 
 .grand-description {
     font-size: 56px;
-    font-family: 'Barlow-Bold', sans-serif;
+    font-family: Barlow-Extra-Bold, sans-serif;
     font-weight: 900;
     color: var(--dark-gray);
+    padding: 15px 10px;
+    grid-row: 1;
+    text-align: center;
 }
 
-.food-delivery {
-    background-image: url('/src/img/png/head-bground.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: space-between;
+.food-delivery .short-text-description {
+    grid-row: 2;
+    padding: 30px 10px;
     text-align: center;
-    flex-wrap: wrap;
-    padding: 200px 0;
+    word-wrap: break-word;
 }
+
+.food-delivery .button-link {
+    grid-row: 3;
+    justify-self: center;
+}
+
+.aboutus-section {
+    display: grid;
+    grid-template-rows: 2;
+    padding: 30px 20px;
+    display: grid;
+    grid-template-rows: 300px 200px;
+}
+
+.aboutus-section .aboutus {
+    grid-row: 1;
+}
+
+.aboutus {
+    display: grid;
+    grid-template-rows: 70px 20px 100px 20px 20px;
+}
+
+.aboutus .heading-group {
+    grid-row: 1;
+}
+
+.aboutus .short-text-description {
+    grid-row: 2;
+}
+
+.aboutus .steps-ordering {
+    grid-row: 3;
+}
+
+.aboutus .text-description {
+    grid-row: 4;
+}
+
+.aboutus .button-link {
+    grid-row: 5;
+}
+
+.aboutus-section .aboutus-img {
+    grid-row: 2;
+}
+
+
+.aboutus {
+    grid-row: 1;
+}
+
+.aboutus-img {
+    grid-row: 2;
+
+}
+
 
 .work-step-title {
     font-family: 'Barlow-Bold', sans-serif;
@@ -37,9 +101,20 @@
     background-color: #fcf6ec;
 }
 
+.transparent-button {
+    font-size: 15px;
+    font-family: Roboto, sans-serif;
+    font-weight: bold;
+    border: 3px solid var(--light-green);
+    background-color: transparent;
+    color: var(--light-green);
+}
+
+
+
 @media (min-width: 1000px) {
     .grand-description {
         font-size: 78px;
-        font-weight: bold;
+        padding: 15px 200px;
     }
 }

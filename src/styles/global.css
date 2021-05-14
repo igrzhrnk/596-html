@@ -6,26 +6,31 @@
 
 @font-face {
     font-family: Roboto;
-    src: url('/src/fonts/roboto/Roboto-Regular.ttf');
+    src: url(../fonts/roboto/Roboto-Regular.ttf);
 }
 
 @font-face {
     font-family: Roboto-Medium;
-    src: url('/src/fonts/roboto/Roboto-Medium.ttf');
+    src: url(../fonts/roboto/Roboto-Medium.ttf);
 }
 
 @font-face {
     font-family: Barlow;
-    src: url('/src/fonts/barlow/Barlow-Regular.ttf');
+    src: url(../fonts/barlow/Barlow-Regular.ttf);
 }
 
 @font-face {
     font-family: Barlow-Bold;
-    src: url('/src/fonts/barlow/Barlow-Bold.ttf');
+    src: url(../fonts/barlow/Barlow-Bold.ttf);
+}
+
+@font-face {
+    font-family: Barlow-Extra-Bold;
+    src: url(../fonts/barlow/Barlow-ExtraBold.ttf);
 }
 
 :root {
-    --darck-green: #298065;
+    --dark-green: #298065;
     --light-green: #3dc491;
     --dark-gray: #4b4f69;
     --light-gray: #6f7490;
@@ -35,7 +40,7 @@
     font-size: 50px;
     font-family: Barlow-Bold, sans-serif;
     font-weight: bold;
-    color: var(--darck-green);
+    color: var(--dark-green);
 }
 
 .group-description {
@@ -72,10 +77,15 @@
     font-weight: bold;
     color: #ffffff;
     background-color: var(--light-green);
-    border-radius: 5px;
-    padding: 20px 10px;
+    border-radius: 4px;
+    padding: 18px 43px;
     text-decoration: none;
-    width: 158px;
+    /* width: 158px; */
+    text-align: center;
+}
+
+.button-link:hover {
+    background-color: #ff775e;
 }
 
 .feedback-user-name {
@@ -93,21 +103,13 @@
 }
 
 .short-black-line {
-    width: 40px;
-    height: 3px;
-    background-color: var(--light-gray);
+    width: 60px;
+    height: 2px;
+    background-color: var(--dark-gray);
 }
 
 .short-green-line {
-    width: 40px;
-    height: 3px;
-    background-color: var(--light-green);
-}
-
-.transparent-botton {
-    font-size: 15px;
-    font-family: Roboto, sans-serif;
-    font-weight: bold;
-    color: var(--light-green);
-    background-color: transparent;
+    width: 60px;
+    height: 2px;
+    background-color: var(--dark-green);
 }

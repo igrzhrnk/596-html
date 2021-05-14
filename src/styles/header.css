@@ -1,5 +1,6 @@
 .top-section {
-    display: block;
+    display: flex;
+    flex-direction: row;
     text-align: center;
     font-size: 17px;
     font-family: Roboto, sans-serif;
@@ -8,19 +9,34 @@
     padding: 30px 15px;
     margin: 0 40px;
     height: 85px;
+    align-content: center;
+    justify-content: space-between;
 }
 
 .fo-logo {
-   width: 98px;
-   height: 85px;
+    width: 98px;
+    height: 85px;
 }
 
 .fo-logo img {
     width: 100%;
 }
 
-.top-nav-menu {
+.burger-button {
+    justify-content: flex-end;
+    right: 10px;
+}
+
+#check-burger {
+    display: none;
+}
+
+input:checked ~ .top-nav-menu {
     display: block;
+}
+
+.top-nav-menu {
+    display: none;
 }
 
 .top-nav-menu-item {
@@ -49,6 +65,10 @@
         flex-direction: row;
         justify-content: center;
         font-size: 16px;
+    }
+
+    .burger-button {
+        display: none;
     }
 
     .top-nav-menu {
