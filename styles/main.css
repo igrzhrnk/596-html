@@ -4,13 +4,12 @@
 }
 
 .food-delivery {
-    background-image: url("/src/img/png/head-bground.png");
+    background-image: url(..img/png/head-bground.png);
     background-repeat: no-repeat;
     background-size: cover;
     display: grid;
     grid-template-rows: 3;
     padding: 200px 0 100px;
-    margin: auto;
 }
 
 .grand-description {
@@ -76,14 +75,12 @@
     grid-row: 2;
 }
 
-
 .aboutus {
     grid-row: 1;
 }
 
 .aboutus-img {
     grid-row: 2;
-
 }
 
 
@@ -110,11 +107,27 @@
     color: var(--light-green);
 }
 
-
-
-@media (min-width: 1000px) {
+@media (min-width: 900px) {
     .grand-description {
         font-size: 78px;
         padding: 15px 200px;
+    }
+
+    .aboutus-section {
+        padding: 60px 0;
+        display: grid;
+        grid-template-columns: 2;
+    }
+
+    .aboutus {
+        grid-column: 1;
+    }
+
+    .aboutus-img {
+        grid-column: 2;
+    }
+    
+    .aboutus-img img {
+        position: relative;
     }
 }

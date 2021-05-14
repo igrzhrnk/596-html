@@ -1,4 +1,12 @@
 /* global styles */
+
+:root {
+    --dark-green: #298065;
+    --light-green: #3dc491;
+    --dark-gray: #4b4f69;
+    --light-gray: #6f7490;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -29,11 +37,9 @@
     src: url(../fonts/barlow/Barlow-ExtraBold.ttf);
 }
 
-:root {
-    --dark-green: #298065;
-    --light-green: #3dc491;
-    --dark-gray: #4b4f69;
-    --light-gray: #6f7490;
+.conteiner {
+    max-width: 1200px;
+    margin: auto;
 }
 
 .title-description {
@@ -80,8 +86,8 @@
     border-radius: 4px;
     padding: 18px 43px;
     text-decoration: none;
-    /* width: 158px; */
     text-align: center;
+    max-width: 100px;
 }
 
 .button-link:hover {

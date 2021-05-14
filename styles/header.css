@@ -7,8 +7,6 @@
     font-weight: bold;
     color: var(--light-gray);
     padding: 30px 15px;
-    margin: 0 40px;
-    height: 85px;
     align-content: center;
     justify-content: space-between;
 }
@@ -59,7 +57,7 @@ input:checked ~ .top-nav-menu {
     padding: 0 6px;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 800px) {
     .top-section {
         display: flex;
         flex-direction: row;
