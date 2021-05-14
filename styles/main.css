@@ -4,7 +4,7 @@
 }
 
 .food-delivery {
-    background-image: url(..img/png/head-bground.png);
+    background-image: url(..img/head-bground.png);
     background-repeat: no-repeat;
     background-size: cover;
     display: grid;
@@ -85,7 +85,7 @@
 
 
 .work-step-title {
-    font-family: 'Barlow-Bold', sans-serif;
+    font-family: Barlow-Bold, sans-serif;
     font-size: 36px;
     color: var(--light-green);
 }
