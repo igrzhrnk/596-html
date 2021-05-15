@@ -57,7 +57,7 @@ input:checked ~ .top-nav-menu {
     padding: 0 6px;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 900px) {
     .top-section {
         display: flex;
         flex-direction: row;

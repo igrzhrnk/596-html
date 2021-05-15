@@ -7,11 +7,10 @@
     --light-gray: #6f7490;
 }
 
-* {
+body {
     margin: 0;
     padding: 0;
 }
-
 
 @font-face {
     font-family: Roboto;
@@ -38,13 +37,13 @@
     src: url(../fonts/Barlow-ExtraBold.ttf);
 }
 
-.conteiner {
+.block {
     max-width: 1200px;
     margin: auto;
 }
 
 .title-description {
-    font-size: 50px;
+    font-size: 44px;
     font-family: Barlow-Bold, sans-serif;
     font-weight: bold;
     color: var(--dark-green);
@@ -55,7 +54,6 @@
     font-family: Barlow-Bold, sans-serif;
     font-weight: bold;
     color: var(--light-green);
-    padding: 40px 0;
 }
 
 .short-text-description {
@@ -69,12 +67,12 @@
     font-size: 17px;
     font-family: Roboto, sans-serif;
     color: var(--light-gray);
+    word-wrap: break-word;
 }
 
 .number-value {
-    font-size: 24px;
-    font-family: Barlow, sans-serif;
-    font-weight: bold;
+    font-size: 22px;
+    font-family: Barlow-Bold, sans-serif;
     color: #ff775e;
 }
 
@@ -110,13 +108,31 @@
 }
 
 .short-black-line {
-    width: 60px;
+    width: 30px;
     height: 2px;
     background-color: var(--dark-gray);
 }
 
 .short-green-line {
-    width: 60px;
+    width: 30px;
     height: 2px;
     background-color: var(--dark-green);
+}
+
+@media (min-width: 900px) {
+    .title-description {
+        font-size: 50px;
+    }
+
+    .short-black-line {
+        width: 60px;
+        height: 2px;
+        background-color: var(--dark-gray);
+    }
+    
+    .short-green-line {
+        width: 60px;
+        height: 2px;
+        background-color: var(--dark-green);
+    }
 }

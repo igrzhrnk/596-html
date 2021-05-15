@@ -4,7 +4,7 @@
     font-size: 17px;
     font-family: Roboto-Medium, sans-serif;
     color: var(--light-gray);
-    margin: 0 40px;
+    padding: 60px 24px;
 }
 
 .sitemap-nav-menu {
@@ -88,12 +88,19 @@
     padding: 20px 0 5px;
 }
 
-@media (min-width: 1000px) {
+.app-bottom-link img {
+    width: 120px;
+    max-width: 120px;
+    height: auto;
+}
+
+@media (min-width: 900px) {
     .sitemap-section {
         display: grid;
         grid-template-columns: 1fr 650px;
         grid-template-rows: 300px 3px 20px;
         font-size: 15px;
+        padding: 60px 15px 35px;
     }
 
     .sitemap-nav-menu {
@@ -182,7 +189,12 @@
         text-align: left;
     }
 
-    .app-button-link {
+    .app-bottom-link img {
+        width: 120px;
+        max-width: 120px;
+        height: auto;
+    }
+    .app-bottom-link {
         grid-row: 3;
         grid-column: 1;
     }
