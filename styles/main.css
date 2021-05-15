@@ -29,7 +29,11 @@
 .work-with-us,
 .faq-group,
 .contact {
-        padding: 60px 24px;
+    padding: 60px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .food-delivery .short-text-description {
@@ -160,8 +164,6 @@
 .work-with-us {
     background-image: url(/img/background.webp);
     text-align: center;
-    display: flex;
-    flex-direction: column;
 }
 
 .work-with-us .short-black-line {
@@ -170,11 +172,6 @@
 
 .work-with-us .button-link {
     margin: auto;
-}
-
-.faq-group {
-    display: flex;
-    flex-direction: column;
 }
 
 .faq-group .title-description {
@@ -205,12 +202,6 @@
 
 .faq-block .text-description {
     padding: 10px 0;
-}
-
-.contact {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 
 .contact-info {
