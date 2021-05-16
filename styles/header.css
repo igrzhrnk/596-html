@@ -49,6 +49,9 @@ input:checked ~ .top-nav-menu {
 .social-net {
     padding: 20px 0;
     color: var(--dark-green);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
 }
 
 .social-net i {
@@ -67,6 +70,7 @@ input:checked ~ .top-nav-menu {
         justify-content: space-between;
         align-content: center;
         font-size: 17px;
+        padding: 30px 60px;
     }
 
     .burger-button {

@@ -37,10 +37,10 @@ body {
     src: url(../fonts/Barlow-ExtraBold.ttf);
 }
 
-.block {
+/* .block {
     max-width: 1200px;
     margin: auto;
-}
+} */
 
 .title-description {
     font-size: 44px;
@@ -83,14 +83,21 @@ body {
     color: #ffffff;
     background-color: var(--light-green);
     border-radius: 4px;
-    padding: 18px 43px;
+    border: none;
+    padding: 16px 0;
     text-decoration: none;
     text-align: center;
-    max-width: 100px;
+    width: 160px;
+    margin: 25px 0;
+}
+
+.button-link:active {
+    border: none;
 }
 
 .button-link:hover {
     background-color: #ff775e;
+    color: #ffffff;
 }
 
 .feedback-user-name {
@@ -124,15 +131,20 @@ body {
         font-size: 50px;
     }
 
-    .short-black-line {
-        width: 60px;
+    .short-black-line,
+    .short-black-line:not([size]) {
+        width: 45px;
         height: 2px;
         background-color: var(--dark-gray);
+        opacity: 1;
     }
     
-    .short-green-line {
-        width: 60px;
-        height: 2px;
+    .short-green-line, 
+    .short-green-line:not([size]) {
+        width: 45px;
+        height: 3px;
         background-color: var(--dark-green);
+        opacity: 1;
     }
+
 }

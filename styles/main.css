@@ -27,8 +27,8 @@
 .deals,
 .delivery,
 .work-with-us,
-.faq-group,
-.contact {
+.faq-section,
+.contact-section {
     padding: 60px 24px;
     display: flex;
     flex-direction: column;
@@ -56,13 +56,13 @@
 .app-link img {
     width: 120px;
     max-width: 120px;
-    height: auto;
 }
 
 .work-step-title {
     font-family: Barlow-Bold, sans-serif;
     font-size: 36px;
     color: var(--light-green);
+    margin: 1px 0;
 }
 
 .transparent-button {
@@ -71,7 +71,15 @@
     font-weight: bold;
     border: 3px solid var(--light-green);
     background-color: transparent;
+    padding: 16px 45px;
     color: var(--light-green);
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.transparent-button:hover {
+    color: #ffffff;
+    background-color: var(--light-green);
 }
 
 .categories .heading-group {
@@ -142,6 +150,8 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    background-color: #ffffff;
+    border-radius: 5px;
 }
 
 .users-feedback-item-photo {
@@ -174,16 +184,16 @@
     margin: auto;
 }
 
-.faq-group .title-description {
+.faq-section .title-description {
     text-align: center;
     padding: 10px 0;
 }
 
-.faq-group .short-green-line {
+.faq-section .short-green-line {
     margin: auto;
 }
 
-.faq-group .short-text-description {
+.faq-section .short-text-description {
     text-align: center;
     word-wrap: break-word;
     padding: 10px 0;
@@ -193,7 +203,6 @@
     display: flex;
     flex-direction: column;
     justify-items: flex-start;
-    padding: 20px 0;
 }
 
 .faq-block .group-description {
@@ -224,7 +233,7 @@
     font-weight: bold;
 }
 
-.contact img {
+.contact-section img {
     width: 510px;
 }
 
@@ -240,9 +249,24 @@
     .deals,
     .delivery,
     .work-with-us,
-    .faq-group,
-    .cotact {
-        padding: 60px 15px 35px;
+    .faq-section,
+    .contact-section {
+        padding: 60px 150px;
+    }
+
+    .deals {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .heading-group .short-green-line {
+        margin: auto;
+    }
+
+    .price-blocks {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
     }
 
     .aboutus-section {
@@ -264,6 +288,16 @@
         max-width: 570px;
     }
 
+    .steps-ordering {
+        list-style: none;
+    }
+
+    .steps-ordering i {
+        color: #ff775e;
+        font-size: 20px;
+        padding-right: 10px;
+    }
+
     .work-steps {
         display: grid;
         grid-template-columns: 2;
@@ -278,7 +312,6 @@
     .app-link img {
         width: 120px;
         max-width: 120px;
-        height: auto;
     }
 
     .order-delivery {
@@ -307,7 +340,7 @@
         height: 100px;
     }
     
-    .contact {
+    .contact-section {
         display: grid;
         grid-template-columns: 2;
     }
@@ -317,9 +350,10 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        padding-right: 20px;
     }
 
-    .contact img {
+    .contact-section img {
         grid-column: 2;
     }
 
@@ -329,8 +363,8 @@
 
     .faq-block-list {
         display: grid;
-        grid-template-columns: 3;
-        grid-template-rows: 2;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        column-gap: 40px;
     }
-    
 }
