@@ -152,6 +152,10 @@
     text-align: center;
     background-color: #ffffff;
     border-radius: 5px;
+    width: 420px;
+    padding: 40px;
+    height: 420px;
+    box-shadow: 0 0 15px #fcf6ec;
 }
 
 .users-feedback-item-photo {
@@ -359,6 +363,10 @@
 
     .number-value {
         font-size: 24px;
+    }
+
+    .users-feedback {
+        width: 1000px;
     }
 
     .faq-block-list {
