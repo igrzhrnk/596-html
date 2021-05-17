@@ -124,6 +124,10 @@
     justify-content: space-between;
 }
 
+.food-values .group-description {
+    flex-wrap: nowrap;
+}
+
 .transparent-button:hover {
     color: #ffffff;
     background-color: var(--light-green);
