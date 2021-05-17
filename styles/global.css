@@ -42,7 +42,6 @@ body {
     font-family: Barlow-Bold, sans-serif;
     font-weight: bold;
     color: var(--dark-green);
-    margin: 0.9rem auto;
 }
 
 .group-description {
@@ -57,7 +56,6 @@ body {
     font-family: Roboto, sans-serif;
     font-weight: bold;
     color: var(--light-gray);
-    margin: 0.9rem auto;
 }
 
 .text-description {
@@ -65,7 +63,6 @@ body {
     font-family: Roboto, sans-serif;
     color: var(--light-gray);
     word-wrap: break-word;
-    margin: 0.5rem auto;
 }
 
 .number-value {
