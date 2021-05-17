@@ -3,6 +3,48 @@
     background-color: #fcf6ec;
 }
 
+.aboutus-section,
+.categories,
+.how-it-work,
+.deals,
+.delivery,
+.users-feedback,
+.faq-section,
+.work-with-us,
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    margin: 100px 50px auto;
+}
+
+.categories .heading-group,
+.how-it-work .heading-group,
+.deals .heading-group,
+.delivery .heading-group,
+.faq-section .heading-group,
+.work-with-us .heading-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.categories .short-text-description,
+.how-it-work .short-text-description,
+.deals .short-text-description,
+.delivery .short-text-description,
+.faq-section .short-text-description,
+.work-with-us .short-text-description {
+    text-align: center;
+}
+
+.aboutus-section .heading-group,
+.aboutus-section .short-text-description,
+.contact-section .heading-group,
+.contact-section .short-text-description {
+    text-align: left;
+}
+
 .food-delivery {
     background-image: url(../img/head-bground.png);
     background-repeat: no-repeat;
@@ -48,11 +90,20 @@
     flex-direction: column;
 }
 
+.steps-ordering {
+    list-style: none;
+}
+
+.steps-ordering i {
+    color: #ff775e;
+    font-size: 20px;
+    padding-right: 10px;
+}
+
 .work-step-title {
     font-family: Barlow-Bold, sans-serif;
     font-size: 36px;
     color: var(--light-green);
-    margin: 1px 0;
 }
 
 .transparent-button {
@@ -67,13 +118,15 @@
     border-radius: 4px;
 }
 
+.food-values {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 .transparent-button:hover {
     color: #ffffff;
     background-color: var(--light-green);
-}
-
-.categories .heading-group {
-    text-align: center;
 }
 
 .categories .short-green-line {
@@ -91,7 +144,7 @@
     flex-direction: column;
     border-radius: 4px;
     text-align: center;
-    padding: 0 20px 20px;
+    padding: 20px;
     background-color: #ffffff;
 }
 
@@ -100,7 +153,7 @@
 }
 
 .food-img {
-    display: block;
+    display: flex;
     max-width: 100px;
     max-height: 100px;
     height: 70px;
@@ -118,15 +171,6 @@
     margin: auto;
     vertical-align: middle;
     object-fit: contain;
-}
-
-.how-it-work .heading-group {
-    text-align: center;
-}
-
-.how-it-work .short-text-description {
-    margin: auto;
-    word-wrap: break-word;
 }
 
 .how-it-work .short-green-line {
@@ -189,8 +233,10 @@
     color: var(--dark-gray);
 }
 
-.work-with-us .short-text-description {
-    padding: 10px 0;
+.work-step {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .faq-section .title-description {
@@ -200,12 +246,6 @@
 
 .faq-section .short-green-line {
     margin: auto;
-}
-
-.faq-section .short-text-description {
-    text-align: center;
-    word-wrap: break-word;
-    padding: 10px 0;
 }
 
 .faq-block {
@@ -246,19 +286,6 @@
     width: 510px;
 }
 
-.deals, .delivery,
-.users-feedback {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    margin: 100px auto;
-}
-
-.delivery .heading-group {
-    text-align: center;
-}
-
 .delivery .short-green-line {
     margin: auto;
 }
@@ -280,7 +307,7 @@
 }
 
 .food-delivery-img {
-    display: block;
+    display: flex;
     width: 100px;
     height: 100px;
     align-self: center;
@@ -308,23 +335,6 @@
         padding: 0 200px;
     }
 
-    .aboutus-section,
-    .delivery,
-    .contact-section,
-    .work-with-us,
-    .faq-section,
-    .users-feedback,
-    .deals,
-    .categories,
-    .how-it-work {
-        margin-top: 70px;
-    }
-
-    .price-blocks {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-    }
-
     .aboutus-section {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -342,27 +352,15 @@
     .work-steps img {
         width: 570px;
         max-width: 570px;
-    }
-
-    .steps-ordering {
-        list-style: none;
-    }
-
-    .steps-ordering i {
-        color: #ff775e;
-        font-size: 20px;
-        padding-right: 10px;
+        justify-self: center;
+        margin: 30px auto;
     }
 
     .work-steps {
         display: grid;
         grid-template-columns: 2;
         grid-template-rows: 3;
-    }
-
-    .work-step {
-        display: flex;
-        flex-direction: column;
+        column-gap: 30px;
     }
 
     .app-link img {
@@ -383,12 +381,6 @@
     .order-deal {
         grid-row: 3;
         grid-column: 1;
-    }
-
-    .aboutus-text {
-        display: flex;
-        flex-direction: row;
-        padding: 15px;
     }
 
     .food-img {
@@ -432,6 +424,12 @@
         display: flex;
         flex-direction: row;
     }
+
+    .restaurant-deal {
+        display: flex;
+        flex-direction: column;
+    }
+
     .carousel-inner .active, 
     .carousel-inner .prev {
         display: inline;
