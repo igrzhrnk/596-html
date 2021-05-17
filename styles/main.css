@@ -21,21 +21,6 @@
     text-align: center;
 }
 
-.aboutus-section,
-.categories,
-.how-it-work,
-.deals,
-.delivery,
-.work-with-us,
-.faq-section,
-.contact-section {
-    padding: 60px 24px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
 .food-delivery .short-text-description {
     grid-row: 2;
     margin: auto;
@@ -56,6 +41,11 @@
 .app-link img {
     width: 120px;
     max-width: 120px;
+}
+
+.aboutus-text {
+    display: flex;
+    flex-direction: column;
 }
 
 .work-step-title {
@@ -101,7 +91,6 @@
     flex-direction: column;
     border-radius: 4px;
     text-align: center;
-    height: 260px;
     padding: 0 20px 20px;
     background-color: #ffffff;
 }
@@ -147,14 +136,11 @@
 .users-feedback-item {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     text-align: center;
     background-color: #ffffff;
     border-radius: 5px;
     width: 420px;
     padding: 40px;
-    height: 420px;
     box-shadow: 0 0 15px #fcf6ec;
 }
 
@@ -177,7 +163,17 @@
 
 .work-with-us {
     background-image: url(/img/background.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
     text-align: center;
+    border-radius: 5px;
+    margin: 100px auto;
+    padding: 50px 0;
 }
 
 .work-with-us .short-black-line {
@@ -186,6 +182,15 @@
 
 .work-with-us .button-link {
     margin: auto;
+}
+
+.work-with-us .title-description {
+    padding: 10px 0;
+    color: var(--dark-gray);
+}
+
+.work-with-us .short-text-description {
+    padding: 10px 0;
 }
 
 .faq-section .title-description {
@@ -241,31 +246,78 @@
     width: 510px;
 }
 
-@media (min-width: 900px) {
+.deals, .delivery,
+.users-feedback {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin: 100px auto;
+}
+
+.delivery .heading-group {
+    text-align: center;
+}
+
+.delivery .short-green-line {
+    margin: auto;
+}
+
+.food-delivery-steps {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-between;
+    padding: 15px auto;
+}
+
+.food-delivery-steps .heading-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: auto 15px;
+}
+
+.food-delivery-img {
+    display: block;
+    width: 100px;
+    height: 100px;
+    align-self: center;
+    margin: 0;
+    background-color: #ffffff;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.food-delivery-img img {
+    margin: auto;
+    object-fit: contain;
+    overflow: hidden;
+    width: 60%;
+    height: 60%;
+}
+
+.food-delivery-steps .short-black-line {
+    margin: auto;
+}
+
+@media (min-width: 992px) {
     .grand-description {
         font-size: 78px;
-        padding: 15px 200px;
+        padding: 0 200px;
     }
 
     .aboutus-section,
-    .categories,
-    .how-it-work,
-    .deals,
     .delivery,
+    .contact-section,
     .work-with-us,
     .faq-section,
-    .contact-section {
-        padding: 60px 150px;
-    }
-
-    .deals {
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-    }
-
-    .heading-group .short-green-line {
-        margin: auto;
+    .users-feedback,
+    .deals,
+    .categories,
+    .how-it-work {
+        margin-top: 70px;
     }
 
     .price-blocks {
@@ -275,7 +327,7 @@
 
     .aboutus-section {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .aboutus-text {
@@ -357,6 +409,10 @@
         padding-right: 20px;
     }
 
+    .contact-info .short-green-line {
+        justify-items: flex-end;
+    }
+
     .contact-section img {
         grid-column: 2;
     }
@@ -365,14 +421,26 @@
         font-size: 24px;
     }
 
-    .users-feedback {
-        width: 1000px;
-    }
-
     .faq-block-list {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 1fr);
         column-gap: 40px;
+    }
+
+    .food-delivery-steps {
+        display: flex;
+        flex-direction: row;
+    }
+    .carousel-inner .active, 
+    .carousel-inner .prev {
+        display: inline;
+        left: 50%;
+    }
+
+    .carousel-inner .carousel-item,
+    .carousel-inner .next {
+        display: inline;
+        left: 1px;
     }
 }

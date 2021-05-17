@@ -108,13 +108,12 @@
     height: auto;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 992px) {
     .sitemap-section {
         display: grid;
         grid-template-columns: 1fr 650px;
         grid-template-rows: 300px 3px 20px;
         font-size: 15px;
-        padding: 25px 150px;
     }
 
     .sitemap-nav-menu {

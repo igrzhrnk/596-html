@@ -20,23 +20,6 @@
     width: 100%;
 }
 
-.burger-button {
-    justify-content: flex-end;
-    right: 10px;
-}
-
-#check-burger {
-    display: none;
-}
-
-input:checked ~ .top-nav-menu {
-    display: block;
-}
-
-.top-nav-menu {
-    display: none;
-}
-
 .top-nav-menu-item {
     list-style: none;
 }
@@ -47,7 +30,6 @@ input:checked ~ .top-nav-menu {
 }
 
 .social-net {
-    padding: 20px 0;
     color: var(--dark-green);
     display: flex;
     flex-direction: row;
@@ -63,14 +45,13 @@ input:checked ~ .top-nav-menu {
     color: var(--dark-green);
 }
 
-@media (min-width: 900px) {
+@media (min-width: 992px) {
     .top-section {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-content: center;
         font-size: 17px;
-        padding: 30px 60px;
     }
 
     .burger-button {
@@ -89,10 +70,6 @@ input:checked ~ .top-nav-menu {
         justify-content: flex-end;
         align-items: center;
         text-align: center;
-    }
-
-    .top-nav-menu-item {
-        padding: 0 15px;
     }
 
     .top-nav-menu-item a:hover {
