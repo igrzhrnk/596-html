@@ -1,0 +1,51 @@
+const feedbacksJSON =
+`[
+    {
+        "id": "1",
+        "userImg": "../img/stacey-peterson.webp",
+        "userName": "Stacey Peterson",
+        "feedbackText": "I really love Japanese food, but I don't always have time to go to my favorite restaurant. Thanks to FoodOrder, I can now enjoy my favorite sushi every day whenever I want.",
+        "feedbackDate": "October 28, 2019"
+    },
+    {
+        "id": "2",
+        "userImg": "../img/jeff-ericsson.webp",
+        "userName": "Jeff Ericsson",
+        "feedbackText": "I don't like to cook, so I often use delivery services. I've tried several services but they all seemed not so convenient to me. Now I am completely satisfied with FoodOrder, they always deliver orders on time.",
+        "feedbackDate": "December 02, 2019"
+    },
+    {
+        "id": "3",
+        "userImg": "../img/alice-howard.webp",
+        "userName": "Alice Howard",
+        "feedbackText": "I have several favorite restaurants, they have incredibly delicious dishes but I always forget to book tables. Many thanks to the FoodOrder delivery service for helping me enjoy the best meals at home.",
+        "feedbackDate": "March 23, 2020"
+    },
+    {
+        "id": "4",
+        "userImg": "../img/jeff-gordons.webp",
+        "userName": "Jeff Gordons",
+        "feedbackText": "I often have to work at night, and in the morning, I'm always hungry. FoodOrder has come to my aid more than once. It's one of the few services that are ready to deliver food at 4 or 5 am.",
+        "feedbackDate": "July 04, 2020"
+    }
+]`;
+
+function loadingJSON(feedbacks) {
+    const feedbackContainer = document.querySelector('.users-feedbacks .carousel-inner');
+    let htmlTemp = '';
+    // <div class="carousel-item row no-gutters"></div>
+    for(const feedback of feedbacks) {
+            htmlTemp += `
+                <div class="users-feedback-item">
+                    <div class="users-feedback-item-photo"><img src="${feedback.userImg}" alt="${feedback.userName}"></div>
+                    <span class="group-description users-feedback-title">${feedback.userName}</span>
+                    <span class="text-description">${feedback.feedbackText}</span>
+                    <span class="feedback-date">${feedback.feedbackDate}</span>
+                </div>
+            `;
+    }
+    feedbackContainer.innerHTML = htmlTemp;
+}
+
+const feedbacks = (JSON.parse(feedbacksJSON));
+loadingJSON(feedbacks);

@@ -14,7 +14,7 @@
 .contact-section {
     display: flex;
     flex-direction: column;
-    margin: 100px 50px auto;
+    margin: 40px auto;
 }
 
 .categories .heading-group,
@@ -50,6 +50,7 @@
 .deals .nav-link.active {
     background-color: transparent;
     justify-content: center;
+    margin: auto 0;
 }
 
 .deals .nav-link.active {
@@ -77,19 +78,19 @@
     padding: 200px 0 100px;
 }
 
-.grand-description {
+.food-delivery .grand-description {
     font-size: 56px;
     font-family: Barlow-Extra-Bold, sans-serif;
     font-weight: 900;
     color: var(--dark-gray);
     grid-row: 1;
+    justify-self: center;
     text-align: center;
 }
 
 .food-delivery .short-text-description {
     grid-row: 2;
-    margin: auto;
-    word-wrap: break-word;
+    text-align: center;
 }
 
 .food-delivery .button-link {
@@ -135,10 +136,11 @@
     font-weight: bold;
     border: 3px solid var(--light-green);
     background-color: transparent;
-    padding: 16px 45px;
+    padding: 15px 45px;
     color: var(--light-green);
     text-decoration: none;
     border-radius: 4px;
+    margin: 15px auto;
 }
 
 .food-values {
@@ -214,7 +216,7 @@
     text-align: center;
     background-color: #ffffff;
     border-radius: 5px;
-    width: 420px;
+    width: 340px;
     padding: 40px;
     box-shadow: 0 0 15px #fcf6ec;
 }
@@ -260,7 +262,7 @@
 }
 
 .work-with-us .title-description {
-    padding: 10px 0;
+    /* padding: 10px 0; */
     color: var(--dark-gray);
 }
 
@@ -272,7 +274,7 @@
 
 .faq-section .title-description {
     text-align: center;
-    padding: 10px 0;
+    /* padding: 10px 0; */
 }
 
 .faq-section .short-green-line {
@@ -334,7 +336,7 @@
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    padding: auto 15px;
+    padding: 15px 15px;
 }
 
 .food-delivery-img {
@@ -360,10 +362,25 @@
     margin: auto;
 }
 
+.more-restaurants {
+    margin: auto;
+    width: 100%;
+}
+
+.carousel-inner .active,
+.carousel-inner .active + .carousel-item {
+    display: block;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: var(--light-green);
+}
+
 @media (min-width: 992px) {
     .grand-description {
         font-size: 78px;
-        padding: 0 200px;
+        max-width: 992px;
     }
 
     .aboutus-section {
@@ -397,6 +414,38 @@
     .app-link img {
         width: 120px;
         max-width: 120px;
+    }
+
+    .aboutus-section,
+    .categories,
+    .how-it-work,
+    .deals,
+    .delivery,
+    .users-feedback,
+    .faq-section,
+    .work-with-us,
+    .contact-section {
+        max-width: 985px;
+    }
+
+    .deals {
+        display: grid;
+        grid-template-rows: 4;
+        grid-column: 1;
+    }
+    .deals .heading-group {
+        grid-row: 1;
+    }
+    .deals .short-text-description {
+        grid-row: 2;
+    }
+    .deals .restaurant-deal {
+        grid-row: 3;
+    }
+    .deals .transparent-button {
+        grid-row: 4;
+        justify-self: center;
+        align-items: center;
     }
 
     .order-delivery {
@@ -459,17 +508,5 @@
     .restaurant-deal {
         display: flex;
         flex-direction: column;
-    }
-
-    .carousel-inner .active, 
-    .carousel-inner .prev {
-        display: inline;
-        left: 50%;
-    }
-
-    .carousel-inner .carousel-item,
-    .carousel-inner .next {
-        display: inline;
-        left: 1px;
     }
 }
