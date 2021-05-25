@@ -50,6 +50,7 @@ body {
     font-family: Barlow-Bold, sans-serif;
     font-weight: bold;
     color: var(--light-green);
+    margin: 15px auto;
 }
 
 .short-text-description {
@@ -65,6 +66,7 @@ body {
     font-family: Roboto, sans-serif;
     color: var(--light-gray);
     word-wrap: break-word;
+    margin: 15px auto;
 }
 
 .number-value {
