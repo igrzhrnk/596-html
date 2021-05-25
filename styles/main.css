@@ -150,6 +150,10 @@
     align-items: flex-end;
 }
 
+.food-values .grand-description {
+    margin-bottom: 0;
+}
+
 .food-values hr {
     color: var(--light-green);
     width: 100%;
@@ -285,14 +289,6 @@
     display: flex;
     flex-direction: column;
     justify-items: flex-start;
-}
-
-.faq-block .group-description {
-    padding: 10px 0;
-}
-
-.faq-block .text-description {
-    padding: 10px 0;
 }
 
 .contact-info {
