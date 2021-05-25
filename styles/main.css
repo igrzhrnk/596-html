@@ -239,7 +239,7 @@
 }
 
 .work-with-us {
-    background-image: url(/img/background.webp);
+    background-image: url(../img/background.webp);
     background-repeat: no-repeat;
     background-size: cover;
     height: 400px;
