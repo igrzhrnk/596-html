@@ -1,9 +1,9 @@
 let restaurants;
 
-function loadingRestJSON() {
-    const restaurantId = document.querySelector('.tab-pane');
+function loadingRestJSON(selector) {
+    const restaurantContainer = document.querySelector('#'+`${selector}`);
     let htmlTemp = '';
-    for(restaurant of restaurants) {
+    for(const restaurant of restaurants) {
         htmlTemp += `
             <div class="food-name">
                 <div class="food-values">
@@ -15,8 +15,8 @@ function loadingRestJSON() {
             </div>
         `;
 
-        if(restaurantId.id === restaurant.restaurantCode) {
-            restaurantId.innerHTML = `<div class="restaurant-deal">${htmlTemp}</div>`;
+        if(selector === restaurant.restaurantCode) {
+            restaurantContainer.innerHTML = `<div class="restaurant-deal">${htmlTemp}</div>`;
         }
     }
 }
@@ -24,7 +24,9 @@ function loadingRestJSON() {
 async function loadRestaurants() {
     const response = await fetch('data/restaurants.json');
     restaurants = await response.json();
-    loadingRestJSON();
+    loadingRestJSON('salad-bar');
+    loadingRestJSON('pizza-italor');
+    loadingRestJSON('burger-city');
 }
 
 loadRestaurants();
