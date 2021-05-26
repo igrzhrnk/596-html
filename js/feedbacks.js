@@ -18,7 +18,7 @@ function loadingFeedbackJSON() {
 }
 
 async function loadFeedbacks() {
-    const response = await fetch('./data/feedbacks.json');
+    const response = await fetch('data/feedbacks.json');
     feedbacks = await response.json();
     loadingFeedbackJSON();
 }
