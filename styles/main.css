@@ -73,13 +73,18 @@
     max-height: 24px;
 }
 
-.button-img {
+.deals .transparent-button {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    width: 250;
+    min-width: 250px;
+}
+
+.button-img {
+    display: inline-block;
     align-self: center;
     justify-self: center;
-    padding: 20px;
+    padding: 40px;
 }
 
 .food-delivery {
@@ -535,7 +540,9 @@
     }
 
     .restaurant-deal {
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: repeat(3, 1fr);
+        column-gap: 20px;
     }
 }

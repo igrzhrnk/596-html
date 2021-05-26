@@ -1,0 +1,130 @@
+[
+    {
+        "id": "1",
+        "restaurantName" : "SaladBar",
+        "restaurantCode" : "salad-bar",
+        "foodName" : "Turkey & Zucchini",
+        "foodPrice": "$25",
+        "foodDescription": "Green peppers, zucchini, spinach, pears, grana padano cheese, tomatoes, cucumbers, olives, sliced turkey breast."
+    },
+    {
+        "id": "2",
+        "restaurantName" : "SaladBar",
+        "restaurantCode" : "salad-bar",
+        "foodName" : "Arugula Salad",
+        "foodPrice": "$35",
+        "foodDescription": "Arugula, raddichio, beets, cherry tomatoes, onions, balsamic vinegar, and grated Romano cheese."
+    },
+    {
+        "id": "3",
+        "restaurantName" : "SaladBar",
+        "restaurantCode" : "salad-bar",
+        "foodName" : "Crab Salad",
+        "foodPrice": "$35",
+        "foodDescription": "Fresh Maryland jumbo crab meat over mixed greens, avocado, asparagus, and roasted peppers."
+    },
+    {
+        "id": "4",
+        "restaurantName" : "SaladBar",
+        "restaurantCode" : "salad-bar",
+        "foodName" : "Antipasti Plate",
+        "foodPrice": "$37",
+        "foodDescription": "Roasted asparagus, smoked salmon, mushrooms, mixed olives, prosciutto, and gorgonzola cheese."
+    },
+    {
+        "id": "5",
+        "restaurantName" : "SaladBar",
+        "restaurantCode" : "salad-bar",
+        "foodName" : "Sicilian Choice",
+        "foodPrice": "$45",
+        "foodDescription": "Fritter made with roasted chicken, pear tomatoes, avocado salad, and truffle vinaigrette."
+    },
+    {
+        "id": "6",
+        "restaurantName" : "SaladBar",
+        "restaurantCode" : "salad-bar",
+        "foodName" : "Vegan Wrap",
+        "foodPrice": "$25",
+        "foodDescription": "Mixed bell peppers, sun dried tomato spread, cucumbers, spinach, and fresh mozzarella."
+    },
+    {
+        "id": "7",
+        "restaurantName" : "Pizza Italor",
+        "restaurantCode" : "pizza-italor",
+        "foodName" : "Vegan Wrap",
+        "foodPrice": "$25",
+        "foodDescription": "Mixed bell peppers, sun dried tomato spread, cucumbers, spinach, and fresh mozzarella."
+    },
+    {
+        "id": "8",
+        "restaurantName" : "Pizza Italor",
+        "restaurantCode" : "pizza-italor",
+        "foodName" : "Vegan Wrap",
+        "foodPrice": "$25",
+        "foodDescription": "Mixed bell peppers, sun dried tomato spread, cucumbers, spinach, and fresh mozzarella."
+    },
+    {
+        "id": "9",
+        "restaurantName" : "Pizza Italor",
+        "restaurantCode" : "pizza-italor",
+        "foodName" : "Vegan Wrap",
+        "foodPrice": "$25",
+        "foodDescription": "Mixed bell peppers, sun dried tomato spread, cucumbers, spinach, and fresh mozzarella."
+    },
+    {
+        "id": "10",
+        "restaurantName" : "Pizza Italor",
+        "restaurantCode" : "pizza-italor",
+        "foodName" : "Vegan Wrap",
+        "foodPrice": "$25",
+        "foodDescription": "Mixed bell peppers, sun dried tomato spread, cucumbers, spinach, and fresh mozzarella."
+    },
+    {
+        "id": "11",
+        "restaurantName" : "Pizza Italor",
+        "restaurantCode" : "pizza-italor",
+        "foodName" : "Vegan Wrap",
+        "foodPrice": "$25",
+        "foodDescription": "Mixed bell peppers, sun dried tomato spread, cucumbers, spinach, and fresh mozzarella."
+    },
+    {
+        "id": "12",
+        "restaurantName" : "Burger City",
+        "restaurantCode" : "burger-city",
+        "foodName" : "Vegan Wrap",
+        "foodPrice": "$25",
+        "foodDescription": "Mixed bell peppers, sun dried tomato spread, cucumbers, spinach, and fresh mozzarella."
+    },
+    {
+        "id": "13",
+        "restaurantName" : "Burger City",
+        "restaurantCode" : "burger-city",
+        "foodName" : "Vegan Wrap",
+        "foodPrice": "$25",
+        "foodDescription": "Mixed bell peppers, sun dried tomato spread, cucumbers, spinach, and fresh mozzarella."
+    },
+    {
+        "id": "14",
+        "restaurantName" : "Burger City",
+        "restaurantCode" : "burger-city",
+        "foodName" : "Vegan Wrap",
+        "foodPrice": "$25",
+        "foodDescription": "Mixed bell peppers, sun dried tomato spread, cucumbers, spinach, and fresh mozzarella."
+    },
+    {
+        "id": "15",
+        "restaurantName" : "Burger City",
+        "restaurantCode" : "burger-city",
+        "foodName" : "Vegan Wrap",
+        "foodPrice": "$25",
+        "foodDescription": "Mixed bell peppers, sun dried tomato spread, cucumbers, spinach, and fresh mozzarella."
+    },
+    {
+        "id": "16",
+        "restaurantName" : "Burger City",
+        "restaurantCode" : "burger-city",
+        "foodName" : "Vegan Wrap",
+        "foodPrice": "$25",
+        "foodDescription": "Mixed bell peppers, sun dried tomato spread, cucumbers, spinach, and fresh mozzarella."
+    }
+]
