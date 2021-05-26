@@ -22,7 +22,7 @@ function loadingRestJSON() {
 }
 
 async function loadRestaurants() {
-    const response = await fetch('../data/restaurants.json');
+    const response = await fetch('./data/restaurants.json');
     restaurants = await response.json();
     loadingRestJSON();
 }
