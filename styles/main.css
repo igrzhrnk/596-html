@@ -69,6 +69,19 @@
     border-right: 0;
 }
 
+.deals .transparent-button svg {
+    max-height: 24px;
+}
+
+.button-img {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-self: center;
+    justify-self: center;
+    padding: 20px;
+}
+
 .food-delivery {
     background-image: url(../img/head-bground.png);
     background-repeat: no-repeat;
@@ -124,12 +137,6 @@
     padding-right: 10px;
 }
 
-.work-step-title {
-    font-family: Barlow-Bold, sans-serif;
-    font-size: 36px;
-    color: var(--light-green);
-}
-
 .transparent-button {
     font-size: 15px;
     font-family: Roboto, sans-serif;
@@ -150,8 +157,8 @@
     align-items: flex-end;
 }
 
-.food-values .grand-description {
-    margin-bottom: 0;
+.food-values .group-description {
+    margin-bottom: 1px;
 }
 
 .food-values hr {
@@ -266,7 +273,6 @@
 }
 
 .work-with-us .title-description {
-    /* padding: 10px 0; */
     color: var(--dark-gray);
 }
 
@@ -274,11 +280,21 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin: 2px;
+}
+
+.work-step-title {
+    font-family: Barlow-Bold, sans-serif;
+    font-size: 36px;
+    color: var(--light-green);
+}
+
+.work-step .text-description {
+    flex-wrap: wrap;
 }
 
 .faq-section .title-description {
     text-align: center;
-    /* padding: 10px 0; */
 }
 
 .faq-section .short-green-line {
@@ -296,6 +312,16 @@
     flex-direction: column;
     align-items: flex-start;
     flex-wrap: wrap;
+}
+
+.contact-info .button-link img{
+    width: 100%;
+    height: 100%;
+    max-width: 24px;
+}
+
+.contact-info .button-link {
+    width: 250px;
 }
 
 .phone-mail {
@@ -373,6 +399,8 @@
     background-color: var(--light-green);
 }
 
+
+
 @media (min-width: 992px) {
     .grand-description {
         font-size: 78px;
@@ -394,7 +422,7 @@
 
     .aboutus-img img,
     .work-steps img {
-        width: 570px;
+        width: 100%;
         max-width: 570px;
         justify-self: center;
         margin: 30px auto;
@@ -402,9 +430,10 @@
 
     .work-steps {
         display: grid;
-        grid-template-columns: 2;
+        grid-template-columns: 50% 50%;
         grid-template-rows: 3;
-        column-gap: 30px;
+        column-gap: 25px;
+        row-gap: 25px;
     }
 
     .app-link img {
@@ -429,15 +458,19 @@
         grid-template-rows: 4;
         grid-column: 1;
     }
+
     .deals .heading-group {
         grid-row: 1;
     }
+
     .deals .short-text-description {
         grid-row: 2;
     }
+
     .deals .restaurant-deal {
         grid-row: 3;
     }
+
     .deals .transparent-button {
         grid-row: 4;
         justify-self: center;

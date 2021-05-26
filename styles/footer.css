@@ -4,7 +4,7 @@
     font-size: 17px;
     font-family: Roboto-Medium, sans-serif;
     color: var(--light-gray);
-    padding: 60px 24px;
+    padding: auto 24px;
 }
 
 .sitemap-nav-menu {
@@ -111,7 +111,7 @@
 @media (min-width: 992px) {
     .sitemap-section {
         display: grid;
-        grid-template-columns: 1fr 650px;
+        grid-template-columns: 1fr 50%;
         grid-template-rows: 300px 3px 20px;
         font-size: 15px;
     }
@@ -189,11 +189,13 @@
     }
 
     .bottom-logo {
-        grid-row: 1;
         grid-column: 1;
+    }
+
+    .bottom-logo {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-around;
         align-items: flex-start;
     }
 
