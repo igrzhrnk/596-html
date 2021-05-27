@@ -118,13 +118,13 @@
 
 .aboutus-img img,
 .work-steps img {
-    width: 636px;
-    max-width: 636px;
+    width: 1rem;
+    min-width: 424px;
 }
 
 .app-link img {
     width: 120px;
-    max-width: 120px;
+    min-width: 120px;
 }
 
 .aboutus-text {
@@ -443,7 +443,7 @@
 
     .app-link img {
         width: 120px;
-        max-width: 120px;
+        min-width: 120px;
     }
 
     .aboutus-section,
