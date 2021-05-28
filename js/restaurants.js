@@ -33,6 +33,8 @@
         loadingRestJSON('burger-city');
     }
 
+    document.querySelector('.tab-pane').classList.add('show');
+    
     loadRestaurants();
 }());
 
