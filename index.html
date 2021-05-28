@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Food Order</title>
-    <link rel="icon" href="img/fivicon.png" type="image/png">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" rel="stylesheet">
@@ -91,52 +91,66 @@
                 <ol class="carousel-indicators">
                     <li data-target="#categories" data-slide-to="0" class="active"></li>
                     <li data-target="#categories" data-slide-to="1"></li>
-                    <li data-target="#categories" data-slide-to="2"></li>
-                    <li data-target="#categories" data-slide-to="3"></li>
-                    <li data-target="#categories" data-slide-to="4"></li>
                 </ol>
-                <div class="food-categories carousel-inner">
-                    <div class="food-card carousel-item active">
-                        <div class="food-img"><img src="img/vegeterian.svg" alt="Vegeterian"></div>
-                        <span class="group-description">Vegeterian</span>
-                        <hr class="short-grey-line">
-                        <span class="text-description">Order the best vegan and vegetarian meals with the fastest delivery
-                            possible.</span>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="food-card">
+                                    <div class="food-img"><img src="img/vegeterian.svg" alt="Vegeterian"></div>
+                                    <span class="group-description">Vegeterian</span>
+                                    <hr class="short-grey-line">
+                                    <span class="text-description">Order the best vegan and vegetarian meals with the fastest delivery
+                                        possible.</span>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="food-card">
+                                    <div class="food-img"><img src="img/pizza.svg" alt="Pizza"></div>
+                                    <span class="group-description">Pizza</span>
+                                    <hr class="short-grey-line">
+                                    <span class="text-description">We deliver original pizza from the best Italian restaurants in New
+                                        York.</span>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="food-card">
+                                    <div class="food-img"><img src="img/sushi.svg" alt="Sushi"></div>
+                                    <span class="group-description">Sushi</span>
+                                    <hr class="short-grey-line">
+                                    <span class="text-description">Delicious sushi from the best Japanese restaurants delivered to your
+                                        place.</span>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                            <div class="food-card">
+                                <div class="food-img"><img src="img/muffin.svg" alt="Muffin"></div>
+                                <span class="group-description">Bakery</span>
+                                <hr class="short-grey-line">
+                                <span class="text-description">Our couriers will deliver fresh and luscious pastries from your
+                                    favorite bakery.</span>
+                            </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="food-card carousel-item">
-                        <div class="food-img"><img src="img/pizza.svg" alt="Pizza"></div>
-                        <span class="group-description">Pizza</span>
-                        <hr class="short-grey-line">
-                        <span class="text-description">We deliver original pizza from the best Italian restaurants in New
-                            York.</span>
-                    </div>
-                    <div class="food-card carousel-item">
-                        <div class="food-img"><img src="img/sushi.svg" alt="Sushi"></div>
-                        <span class="group-description">Sushi</span>
-                        <hr class="short-grey-line">
-                        <span class="text-description">Delicious sushi from the best Japanese restaurants delivered to your
-                            place.</span>
-                    </div>
-                    <div class="food-card carousel-item">
-                        <div class="food-img"><img src="img/muffin.svg" alt="Muffin"></div>
-                        <span class="group-description">Bakery</span>
-                        <hr class="short-grey-line">
-                        <span class="text-description">Our couriers will deliver fresh and luscious pastries from your
-                            favorite bakery.</span>
-                    </div>
-                    <div class="food-card carousel-item">
-                        <div class="food-img"><img src="img/kebab.svg" alt="Kebab"></div>
-                        <span class="group-description">Fast Food</span>
-                        <hr class="short-grey-line">
-                        <span class="text-description">Order your "guilty pleasure" and get it delivered to your place in
-                            just 30 minutes.</span>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="food-card">
+                                    <div class="food-img"><img src="img/kebab.svg" alt="Kebab"></div>
+                                    <span class="group-description">Fast Food</span>
+                                    <hr class="short-grey-line">
+                                    <span class="text-description">Order your "guilty pleasure" and get it delivered to your place in
+                                        just 30 minutes.</span>
+                                </div>
+                            </div>
                     </div>
                 </div>
-                <a class="carousel-control-prev" href="#categories" role="button" data-slide="prev">
+                <a class="left carousel-control-prev" href="#categories" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </a>
-                <a class="carousel-control-next" href="#categories" role="button" data-slide="next">
+                <a class="right carousel-control-next" href="#categories" role="button" data-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </a>
@@ -274,7 +288,6 @@
                     <li data-target="#carousel-feedbacks" data-bs-slide-to="0" class="active"></li>
                     <li data-target="#carousel-feedbacks" data-bs-slide-to="1"></li>
                     <li data-target="#carousel-feedbacks" data-bs-slide-to="2"></li>
-                    <li data-target="#carousel-feedbacks" data-bs-slide-to="3"></li>
                 </ol>
 
                 <div class="carousel-inner"></div>
@@ -460,7 +473,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
     </script>
-    <script src="js/carousel.js"></script>
+    <script src="js/categories.js"></script>
 </body>
 
 </html>

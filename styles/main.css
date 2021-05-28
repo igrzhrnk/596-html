@@ -8,7 +8,6 @@
 .how-it-work,
 .deals,
 .delivery,
-.users-feedbacks,
 .faq-section,
 .work-with-us,
 .contact-section {
@@ -180,11 +179,6 @@
 
 .categories .short-green-line {
     margin: auto;
-}
-
-.food-categories {
-    display: flex;
-    flex-direction: row;
 }
 
 .food-card {
@@ -398,15 +392,16 @@
     width: 100%;
 }
 
-.carousel-inner .active,
-.carousel-inner .active + .carousel-item {
+.users-feedback .carousel-inner .active,
+.users-feedback .carousel-inner .active + .carousel-item {
     display: grid;
     grid-template-columns: 50% 50%;
     column-gap: 25px;
     justify-content: center;
 }
 
-.carousel-inner {
+.users-feedback .carousel-inner,
+.categories .carousel-inner {
     width: 95%;
     margin-left: 2rem;
     margin-right: 2rem;
