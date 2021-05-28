@@ -80,50 +80,68 @@
             </div>
         </section>
 
-        <section class="categories container" id="categories">
+        <section class="categories container >
             <div class="heading-group">
                 <h2 class="title-description">Popular Categories.</h2>
                 <hr class="short-green-line">
             </div>
             <span class="short-text-description">Choose any cuisine you like, and we'll deliver in no later than 30
                 minutes.</span>
-            <div class="food-categories">
-                <div class="food-card">
-                    <div class="food-img"><img src="img/vegeterian.svg" alt="Vegeterian"></div>
-                    <span class="group-description">Vegeterian</span>
-                    <hr class="short-black-line">
-                    <span class="text-description">Order the best vegan and vegetarian meals with the fastest delivery
-                        possible.</span>
+            <div class="carousel carousel-dark slide" id="categories" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#categories" data-slide-to="0" class="active"></li>
+                    <li data-target="#categories" data-slide-to="1"></li>
+                    <li data-target="#categories" data-slide-to="2"></li>
+                    <li data-target="#categories" data-slide-to="3"></li>
+                    <li data-target="#categories" data-slide-to="4"></li>
+                </ol>
+                <div class="food-categories carousel-inner">
+                    <div class="food-card carousel-item active">
+                        <div class="food-img"><img src="img/vegeterian.svg" alt="Vegeterian"></div>
+                        <span class="group-description">Vegeterian</span>
+                        <hr class="short-grey-line">
+                        <span class="text-description">Order the best vegan and vegetarian meals with the fastest delivery
+                            possible.</span>
+                    </div>
+                    <div class="food-card carousel-item">
+                        <div class="food-img"><img src="img/pizza.svg" alt="Pizza"></div>
+                        <span class="group-description">Pizza</span>
+                        <hr class="short-grey-line">
+                        <span class="text-description">We deliver original pizza from the best Italian restaurants in New
+                            York.</span>
+                    </div>
+                    <div class="food-card carousel-item">
+                        <div class="food-img"><img src="img/sushi.svg" alt="Sushi"></div>
+                        <span class="group-description">Sushi</span>
+                        <hr class="short-grey-line">
+                        <span class="text-description">Delicious sushi from the best Japanese restaurants delivered to your
+                            place.</span>
+                    </div>
+                    <div class="food-card carousel-item">
+                        <div class="food-img"><img src="img/muffin.svg" alt="Muffin"></div>
+                        <span class="group-description">Bakery</span>
+                        <hr class="short-grey-line">
+                        <span class="text-description">Our couriers will deliver fresh and luscious pastries from your
+                            favorite bakery.</span>
+                    </div>
+                    <div class="food-card carousel-item">
+                        <div class="food-img"><img src="img/kebab.svg" alt="Kebab"></div>
+                        <span class="group-description">Fast Food</span>
+                        <hr class="short-grey-line">
+                        <span class="text-description">Order your "guilty pleasure" and get it delivered to your place in
+                            just 30 minutes.</span>
+                    </div>
                 </div>
-                <div class="food-card">
-                    <div class="food-img"><img src="img/pizza.svg" alt="Pizza"></div>
-                    <span class="group-description">Pizza</span>
-                    <hr class="short-black-line">
-                    <span class="text-description">We deliver original pizza from the best Italian restaurants in New
-                        York.</span>
-                </div>
-                <div class="food-card">
-                    <div class="food-img"><img src="img/sushi.svg" alt="Sushi"></div>
-                    <span class="group-description">Sushi</span>
-                    <hr class="short-black-line">
-                    <span class="text-description">Delicious sushi from the best Japanese restaurants delivered to your
-                        place.</span>
-                </div>
-                <div class="food-card">
-                    <div class="food-img"><img src="img/muffin.svg" alt="Muffin"></div>
-                    <span class="group-description">Bakery</span>
-                    <hr class="short-black-line">
-                    <span class="text-description">Our couriers will deliver fresh and luscious pastries from your
-                        favorite bakery.</span>
-                </div>
-                <div class="food-card">
-                    <div class="food-img"><img src="img/kebab.svg" alt="Kebab"></div>
-                    <span class="group-description">Fast Food</span>
-                    <hr class="short-black-line">
-                    <span class="text-description">Order your "guilty pleasure" and get it delivered to your place in
-                        just 30 minutes.</span>
-                </div>
+                <a class="carousel-control-prev" href="#categories" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#categories" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </a>
             </div>
+            
         </section>
 
         <section class="how-it-work container" id="how-it-work">
@@ -172,207 +190,39 @@
             <div class="restaurants">
                 <nav>
                     <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                        <button class="short-text-description nav-link active" id="salad-bar-tab" data-bs-toggle="tab" data-bs-target="#salad-bar" type="button" role="tab" aria-controls="salad-bar" aria-selected="true">SaladBar</button>
-                        <button class="short-text-description nav-link" id="pizza-italor-tab" data-bs-toggle="tab" data-bs-target="#pizza-italor" type="button" role="tab" aria-controls="pizza-italor" aria-selected="false">Pizza Italor</button>
-                        <button class="short-text-description nav-link" id="burger-city-tab" data-bs-toggle="tab" data-bs-target="#burger-city" type="button" role="tab" aria-controls="burger-city" aria-selected="false">Burger City</button>
+                        <button class="short-text-description nav-link active" id="salad-bar-tab" data-bs-toggle="tab"
+                            data-bs-target="#salad-bar" type="button" role="tab" aria-controls="salad-bar"
+                            aria-selected="true">SaladBar</button>
+                        <button class="short-text-description nav-link" id="pizza-italor-tab" data-bs-toggle="tab"
+                            data-bs-target="#pizza-italor" type="button" role="tab" aria-controls="pizza-italor"
+                            aria-selected="false">Pizza Italor</button>
+                        <button class="short-text-description nav-link" id="burger-city-tab" data-bs-toggle="tab"
+                            data-bs-target="#burger-city" type="button" role="tab" aria-controls="burger-city"
+                            aria-selected="false">Burger City</button>
                     </div>
                 </nav>
                 <div class="tab-content" id="nav-tabContent">
                     <div class="tab-pane fade  active" id="salad-bar" role="tabpanel" aria-labelledby="salad-bar-tab">
-                        <!-- <div class="restaurant-deal">
-                            <div class="food-name">
-                                <div class="food-values">
-                                    <span class="group-description">Turkey & Zucchini</span>
-                                    <hr>
-                                    <span class="number-value">$25</span>
-                                </div>
-                                <span class="text-description">Green peppers, zucchini, spinach, pears, grana padano cheese,
-                                    tomatoes, cucumbers, olives,
-                                    sliced turkey breast.</span>
-                            </div>
-                            <div class="food-name">
-                                <div class="food-values">
-                                    <span class="group-description">Arugula Salad</span>
-                                    <hr>
-                                    <span class="number-value">$35</span>
-                                </div>
-                                <span class="text-description">Arugula, raddichio, beets, cherry tomatoes, onions, balsamic
-                                    vinegar, and grated Romano
-                                    cheese.</span>
-                            </div>
-                            <div class="food-name">
-                                <div class="food-values">
-                                    <span class="group-description">Crab Salad</span>
-                                <hr>
-                                <span class="number-value">$35</span>
-                                </div>
-                                <span class="text-description">Fresh Maryland jumbo crab meat over mixed greens, avocado,
-                                    asparagus, and roasted
-                                    peppers.</span>
-                            </div>
-                            <div class="food-name">
-                                <div class="food-values">
-                                    <span class="group-description">Antipasti Plate</span>
-                                    <hr>
-                                    <span class="number-value">$37</span>
-                                </div>
-                                <span class="text-description">Roasted asparagus, smoked salmon, mushrooms, mixed olives,
-                                    prosciutto, and gorgonzola
-                                    cheese.</span>
-                            </div>
-                            <div class="food-name">
-                                <div class="food-values">
-                                    <span class="group-description">Sicilian Choice</span>
-                                <hr>
-                                <span class="number-value">$45</span>
-                                </div>
-                                <span class="text-description">Fritter made with roasted chicken, pear tomatoes, avocado salad,
-                                    and truffle
-                                    vinaigrette.</span>
-                            </div>
-                            <div class="food-name">
-                                <div class="food-values">
-                                    <span class="group-description">Vegan Wrap</span>
-                                    <hr>
-                                    <span class="number-value">$25</span>
-                                </div>
-                                <span class="text-description">Mixed bell peppers, sun dried tomato spread, cucumbers, spinach,
-                                    and fresh
-                                    mozzarella.</span>
-                            </div>
-                        </div> -->
                     </div>
-                    <div class="tab-pane fade show" id="pizza-italor" role="tabpanel" aria-labelledby="pizza-italor-tab">
-                        <!-- <div class="restaurant-deal">
-                            <div class="food-name">
-                                <div class="food-values">
-                                    <span class="group-description">Mediterranean Pizza</span>
-                                    <hr>
-                                    <span class="number-value">$25</span>
-                                </div>
-                                <span class="text-description">Salami, pepperoni, mushrooms, onions, bell peppers, sausage, feta
-                                    cheese, and Canadian
-                                    bacon.</span>
-                            </div>
-                            <div class="food-name">
-                                <div class="food-values">
-                                    <span class="group-description">Hawaiian Pizza</span>
-                                    <hr>
-                                    <span class="number-value">$20</span>
-                                </div>
-                                <span class="text-description">BBQ chicken, pepper, tomatoes, pineapple, mushrooms, and onions
-                                    (tomato sauce or
-                                    ranch).</span>
-                            </div>
-                            <div class="food-name">
-                                <div class="food-values">
-                                    <span class="group-description">Portuguese Pizza</span>
-                                    <hr>
-                                    <span class="number-value">$25</span>
-                                </div>
-                                <span class="text-description">Bacon, eggs, heats of palm, onions, tomatoes, ham, peppers,
-                                    oregano, spicy sauce.</span>
-                            </div>
-                            <div class="food-name">
-                                <div class="food-values">
-                                    <span class="group-description">Vegan Calzone</span>
-                                    <hr>
-                                    <span class="number-value">$15</span>
-                                </div>
-                                <span class="text-description">Whole milk mozzarella, ricotta cheese, fresh spinach, mushrooms,
-                                    onions, bell peppers, sliced
-                                    tomatoes, and ripe black olives.</span>
-                            </div>
-                            <div class="food-name">
-                                <div class="food-values">
-                                    <span class="group-description">Pepperoni Pizza</span>
-                                <hr>
-                                <span class="number-value">$25</span>
-                                </div>
-                                <span class="text-description">Crushed tomatoes, shredded mozzarella, hormone-free pepperoni,
-                                    and shredded Parmesan
-                                    cheese.</span>
-                            </div>
-                            <div class="food-name">
-                                <div class="food-values">
-                                    <span class="group-description">Italiano</span>
-                                    <hr>
-                                    <span class="number-value">$35</span>
-                                </div>
-                                <span class="text-description">Red sauce, sweet Italian sausage, red chilli flakes, creamy
-                                    mozzarella, broccoli rabe,
-                                    marinated cherry tomatoes, and pecorino Romano.</span>
-                            </div>
-                        </div> -->
-                    </div>
-                    <div class="tab-pane fade" id="burger-city" role="tabpanel" aria-labelledby="burger-city-tab">
-                        <!-- <div class="restaurant-deal">
-                            <div class="food-name">
-                                <div class="food-values">
-                                    <span class="group-description">Double Western Burger</span>
-                                    <hr>
-                                    <span class="number-value">$9.50</span>
-                                </div>
-                                <span class="text-description">Two charbroiled beef patties, two strips of bacon, two slices of
-                                    melted American cheese, and
-                                    BBQ Sauce.</span>
-                            </div>
-                            <div class="food-name">
-                                <div class="food-values">
-                                    <span class="group-description">Guacamole Bacon Burger</span>
-                                    <hr>
-                                    <span class="number-value">$10.20</span>
-                                </div>
-                                <span class="text-description">One charbroiled beef patty, guacamole, bacon, melted cheese,
-                                    lettuce, tomato, red onions, and
-                                    sour-sweet sauce.</span>
-                            </div>
-                            <div class="food-name">
-                                <div class="food-values">
-                                    <span class="group-description">Crispy Chicken Burger</span>
-                                    <hr>
-                                    <span class="number-value">$7.50</span>
-                                </div>
-                                <span class="text-description">A crispy chicken fillet, topped with bacon, Swiss cheese,
-                                    lettuce, tomato, and ranch
-                                    dressing.</span>
-                            </div>
-                            <div class="food-name">
-                                <div class="food-values">
-                                    <span class="group-description">Classic Double Cheeseburger</span>
-                                    <hr>
-                                    <span class="number-value">$7.50</span>
-                                </div>
-                                <span class="text-description">Double meat, double cheese, grilled onions, cucumber, lettuce &
-                                    tomato on plain bun.</span>
-                            </div>
-                            <div class="food-name">
-                                <div class="food-values">
-                                    <span class="group-description">Jalapeño Burger</span>
-                                    <hr>
-                                    <span class="number-value">$12.50</span>
-                                </div>
-                                <span class="text-description">One charbroiled beef patty, cheese, jalapeño coins, and Santa Fe
-                                    Sauce, served on a fresh
-                                    baked bun.</span>
-                            </div>
-                            <div class="food-name">
-                                <div class="food-values">
-                                    <span class="group-description">Chicken Pesto Combo</span>
-                                    <hr>
-                                    <span class="number-value">$13.50</span>
-                                </div>
-                                <span class="text-description">One chicken fillet, pesto aioli, lettuce, tomato, onion, and
-                                    Swiss cheese on a toasted bun.
-                                    Served with fries.</span>
-                            </div>
-                        </div> -->
-                    </div>
+                    <div class="tab-pane fade show" id="pizza-italor" role="tabpanel"
+                        aria-labelledby="pizza-italor-tab"></div>
+                    <div class="tab-pane fade" id="burger-city" role="tabpanel" aria-labelledby="burger-city-tab"></div>
                 </div>
             </div>
             <div class="button-img">
-                <button type="button" class="transparent-button btn" data-target="#">More&nbsp;Restaurants<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23 18" fill="none" x="0px" y="0px" style="max-width:100%" height="100%"><path d="M16.3471 0.292877C16.7375 -0.0976257 17.3708 -0.0976257 17.7612 0.292877C18.1518 0.68338 18.1518 1.31656 17.7612 1.70706L13.1652 6.30325C12.9699 6.49857 12.9699 6.81509 13.1652 7.01028C13.3603 7.2056 13.6769 7.2056 13.8723 7.01041L18.4684 2.41422C18.8588 2.02371 19.4921 2.02371 19.8825 2.41422C20.2731 2.80472 20.2731 3.4379 19.8825 3.8284L15.2866 8.42459C15.0912 8.6199 15.0912 8.93643 15.2866 9.13162C15.4816 9.32693 15.7983 9.32693 15.9936 9.13174L20.5898 4.53555C20.9802 4.14505 21.6135 4.14505 22.0038 4.53555C22.3942 4.92606 22.3942 5.55911 22.0038 5.94962L17.0541 10.8994C16.2729 11.6805 15.0065 11.6805 14.2255 10.8994L13.5185 10.1923L12.9936 10.7173L11.5795 9.30313L12.1044 8.77811L11.3972 8.07095C10.6161 7.28995 10.6161 6.02359 11.3972 5.24258L16.3471 0.292877Z" transform="translate(0.259277)" fill="currentColor" style="">
-                        </path><path d="M8.90692 11.9756L5.03339 15.8492C4.64276 16.2397 4.64276 16.8728 5.03339 17.2633C5.42377 17.6538 6.05707 17.6538 6.44745 17.2633L10.3212 13.3897L8.90692 11.9756Z" transform="translate(0.259277)" fill="currentColor" style=""></path><path fill-rule="evenodd" clip-rule="evenodd" d="M1.5976 1.38577C-0.532532 3.5159 -0.532532 6.96951 1.5976 9.09964L5.15594 12.658C5.56537 13.0675 6.22943 13.0675 6.6391 12.658L8.72601 10.5711L15.5795 17.425C15.9702 17.8155 16.6032 17.8155 16.9938 17.425C17.3845 17.0345 17.3845 16.4013 16.9938 16.0108L2.36908 1.38577C2.26019 1.27689 2.11664 1.22366 1.97382 1.2261C1.89667 1.22745 1.81976 1.24503 1.74872 1.27896C1.69403 1.30496 1.64276 1.34061 1.5976 1.38577ZM2.20966 4.05496C1.76288 5.27835 2.03021 6.70377 3.0119 7.68546L5.8974 10.5711L7.31171 9.15689L2.20966 4.05496Z" transform="translate(0.259277)" fill="currentColor" style=""></path>
+                <button type="button" class="transparent-button btn" data-target="#">More&nbsp;Restaurants<svg
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23 18" fill="none" x="0px" y="0px"
+                        style="max-width:100%" height="100%">
+                        <path
+                            d="M16.3471 0.292877C16.7375 -0.0976257 17.3708 -0.0976257 17.7612 0.292877C18.1518 0.68338 18.1518 1.31656 17.7612 1.70706L13.1652 6.30325C12.9699 6.49857 12.9699 6.81509 13.1652 7.01028C13.3603 7.2056 13.6769 7.2056 13.8723 7.01041L18.4684 2.41422C18.8588 2.02371 19.4921 2.02371 19.8825 2.41422C20.2731 2.80472 20.2731 3.4379 19.8825 3.8284L15.2866 8.42459C15.0912 8.6199 15.0912 8.93643 15.2866 9.13162C15.4816 9.32693 15.7983 9.32693 15.9936 9.13174L20.5898 4.53555C20.9802 4.14505 21.6135 4.14505 22.0038 4.53555C22.3942 4.92606 22.3942 5.55911 22.0038 5.94962L17.0541 10.8994C16.2729 11.6805 15.0065 11.6805 14.2255 10.8994L13.5185 10.1923L12.9936 10.7173L11.5795 9.30313L12.1044 8.77811L11.3972 8.07095C10.6161 7.28995 10.6161 6.02359 11.3972 5.24258L16.3471 0.292877Z"
+                            transform="translate(0.259277)" fill="currentColor">
+                        </path>
+                        <path
+                            d="M8.90692 11.9756L5.03339 15.8492C4.64276 16.2397 4.64276 16.8728 5.03339 17.2633C5.42377 17.6538 6.05707 17.6538 6.44745 17.2633L10.3212 13.3897L8.90692 11.9756Z"
+                            transform="translate(0.259277)" fill="currentColor"></path>
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M1.5976 1.38577C-0.532532 3.5159 -0.532532 6.96951 1.5976 9.09964L5.15594 12.658C5.56537 13.0675 6.22943 13.0675 6.6391 12.658L8.72601 10.5711L15.5795 17.425C15.9702 17.8155 16.6032 17.8155 16.9938 17.425C17.3845 17.0345 17.3845 16.4013 16.9938 16.0108L2.36908 1.38577C2.26019 1.27689 2.11664 1.22366 1.97382 1.2261C1.89667 1.22745 1.81976 1.24503 1.74872 1.27896C1.69403 1.30496 1.64276 1.34061 1.5976 1.38577ZM2.20966 4.05496C1.76288 5.27835 2.03021 6.70377 3.0119 7.68546L5.8974 10.5711L7.31171 9.15689L2.20966 4.05496Z"
+                            transform="translate(0.259277)" fill="currentColor"></path>
                     </svg>
                 </button>
             </div>
@@ -391,7 +241,7 @@
                         <img src="img/receipt.svg" alt="Receipt">
                     </div>
                     <span class="group-description">Delivery in 30 Minutes</span>
-                    <hr class="short-black-line">
+                    <hr class="short-grey-line">
                     <span class="text-description">You will receive your order in a maximum of half an hour, otherwise,
                         you'll get it for
                         <span style="color: #ff775e;">free.</span></span>
@@ -401,7 +251,7 @@
                         <img src="img/location.svg" alt="Location">
                     </div>
                     <span class="group-description">Live Order Tracking</span>
-                    <hr class="short-black-line">
+                    <hr class="short-grey-line">
                     <span class="text-description">You can track your order at any stage, whether it's being cooked or
                         delivered.</span>
                 </div>
@@ -410,7 +260,7 @@
                         <img src="img/moped.svg" alt="Moped">
                     </div>
                     <span class="group-description">We Work 24/7</span>
-                    <hr class="short-black-line">
+                    <hr class="short-grey-line">
                     <span class="text-description">Hungry at night? No problem. Our courier will deliver your order even
                         at 3 am.</span>
                 </div>
@@ -419,6 +269,16 @@
 
         <section class="users-feedbacks container">
             <div id="carousel-feedbacks" class="carousel carousel-dark slide" data-ride="carousel">
+                
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-feedbacks" data-bs-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-feedbacks" data-bs-slide-to="1"></li>
+                    <li data-target="#carousel-feedbacks" data-bs-slide-to="2"></li>
+                    <li data-target="#carousel-feedbacks" data-bs-slide-to="3"></li>
+                </ol>
+
+                <div class="carousel-inner"></div>
+
                 <a class="left carousel-control-prev" href="#feedbackCarousel" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
@@ -427,25 +287,18 @@
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </a>
-
-                <ol class="carousel-indicators">
-                    <li data-target="#carousel-feedbacks" data-slide-to="0" class="active"></li>
-                    <li data-target="#carousel-feedbacks" data-slide-to="1"></li>
-                    <li data-target="#carousel-feedbacks" data-slide-to="2"></li>
-                    <li data-target="#carousel-feedbacks" data-slide-to="3"></li>
-                </ol>
-                <div class="carousel-inner"></div>
             </div>
         </section>
 
         <section class="work-with-us" id="work-with-us">
             <div class="heading-group">
                 <h2 class="title-description">Want to Become Our Partner?</h2>
-                <hr class="short-black-line">
+                <hr class="long-grey-line">
             </div>
             <span class="short-text-description">Press the button and send us a message, we will contact you
                 shortly.</span>
-            <a class="button-link" href="pgs/sendmail.html">Send a Request</a>
+            <button type="button" class="button-link btn btn-success" data-toggle="modal" data-target="#send-request">Send a Request</button>
+            
         </section>
 
         <section class="faq-section container" id="faq">
@@ -507,7 +360,8 @@
                     <span class="text-description">foodorder@email.com</span>
                     <span class="text-description">foodorder-support@email.com</span>
                 </div>
-                <button type="button" class="button-link btn btn-success">Become a Partner <img src="img/send-mail.svg" alt="send emeil"></button>
+                <button type="button" class="button-link btn btn-success">Become a Partner <img src="img/send-mail.svg"
+                        alt="send emeil"></button>
             </div>
             <img src="img/illustration.webp" alt="">
         </section>
@@ -562,6 +416,37 @@
         </div>
 
     </footer>
+
+    <div class="modal fade" id="send-request" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title group-description">Become Ours Partner!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <hr class="short-green-line">
+                <div class="modal-body">
+                    <div class="group-info">
+                        <span class="short-text-description">Want to join 400+ NY restaurants working with us?</span>
+                        <span class="short-text-description">Fill out the form:</span>
+                    </div>
+                    <form action="">
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="" placeholder="Name">
+                            <input type="tel" class="form-control" name="" placeholder="Phone number">
+                            <input type="email" class="form-control" name="" placeholder="Email">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-success button-link">Submit</button>
+                    <span class="text-description">By submitting this form, you accept our <u>Terms</u> & <u>Privacy Policy</u></span>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="js/feedbacks.js"></script>
     <script src="js/restaurants.js"></script>

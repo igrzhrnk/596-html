@@ -66,7 +66,7 @@ body {
     font-family: Roboto, sans-serif;
     color: var(--light-gray);
     word-wrap: break-word;
-    margin: 15px auto;
+    margin: 15px 0;
 }
 
 .number-value {
@@ -114,16 +114,23 @@ body {
     margin: 0.9rem auto;
 }
 
-.short-black-line {
+.short-grey-line {
     width: 30px;
-    height: 2px;
+    height: 0.3rem;
+    background-color: var(--light-gray);
+    margin: 3px auto;
+}
+
+.long-grey-line {
+    width: 4rem;
+    height: 0.3rem;
     background-color: var(--dark-gray);
     margin: 3px auto;
 }
 
 .short-green-line {
-    width: 30px;
-    height: 2px;
+    width: 3rem;
+    height: 0.3rem;
     background-color: var(--dark-green);
 }
 
@@ -132,18 +139,27 @@ body {
         font-size: 50px;
     }
 
-    .short-black-line,
-    .short-black-line:not([size]) {
-        width: 45px;
-        height: 2px;
-        background-color: var(--dark-gray);
+    .short-grey-line,
+    .short-grey-line:not([size]) {
+        width: 3rem;
+        height: 0.2rem;
+        background-color: var(--light-gray);
         opacity: 1;
+    }
+
+    .long-grey-line,
+    .long-grey-line:not([size]) {
+        width: 4rem;
+        height: 0.3rem;
+        background-color: var(--dark-gray);
+        margin: 3px auto;
+        opacity: 0.7;
     }
     
     .short-green-line, 
     .short-green-line:not([size]) {
-        width: 45px;
-        height: 3px;
+        width: 3rem;
+        height: 0.2rem;
         background-color: var(--dark-green);
         opacity: 1;
     }
