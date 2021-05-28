@@ -4,7 +4,7 @@
     function loadingFeedbackJSON() {
         const feedbackContainer = document.querySelector('.users-feedbacks .carousel-inner');
         let htmlTemp = '';
-    
+        
         for(const feedback of feedbacks) {
             htmlTemp += `
                 <div class="users-feedback-item">
@@ -16,8 +16,8 @@
             `;
         }
 
-        feedbackContainer.innerHTML = `<div class="carousel-item active"><div class="row"><div class="col-md-4">${htmlTemp}</div></div></div>`;
-        
+
+        feedbackContainer.innerHTML = `<div class="carousel-item active"><div class="row"><div class="col-md-6">${htmlTemp}</div></div></div>`;
     }
     
     async function loadFeedbacks() {
