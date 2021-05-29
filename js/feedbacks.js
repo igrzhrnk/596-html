@@ -8,7 +8,7 @@
             for(let i = 1; i < sizeList; i++) {
                 if(+feedback.id === i) {
                     htmlTemp += `
-                        <div class="col-md-6">
+                        <div class="col clearfix d-none d-md-block">
                             <div class="users-feedback-item">
                                 <div class="users-feedback-item-photo"><img src="${feedback.userImg}" alt="${feedback.userName}"></div>
                                 <span class="group-description users-feedback-title">${feedback.userName}</span>
@@ -22,13 +22,17 @@
            
         }
 
-        feedbackContainer.innerHTML = `<div class="carousel-item active"><div class="row">${htmlTemp}</div></div>`;
+        feedbackContainer.innerHTML = `<div class="carousel-item"><div class="row">${htmlTemp}</div></div>`;
+        $('div.carousel-item').toggleClass('active');
     }
-    
+
     async function loadFeedbacks() {
         const response = await fetch('data/feedbacks.json');
         feedbacks = await response.json();
-        loadingFeedbackJSON(3);
+        for(let i = 1; i < feedbacks.length; i++) {
+            loadingFeedbackJSON(i);
+        }
+        
     }
 
     loadFeedbacks();

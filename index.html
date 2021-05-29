@@ -80,7 +80,7 @@
             </div>
         </section>
 
-        <section class="categories container >
+        <section class="categories container">
             <div class="heading-group">
                 <h2 class="title-description">Popular Categories.</h2>
                 <hr class="short-green-line">
@@ -88,10 +88,6 @@
             <span class="short-text-description">Choose any cuisine you like, and we'll deliver in no later than 30
                 minutes.</span>
             <div class="carousel slide" id="categories" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#categories" data-slide-to="0" class="active"></li>
-                    <li data-target="#categories" data-slide-to="1"></li>
-                </ol>
                 <div class="categories-group">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -105,7 +101,7 @@
                                             possible.</span>
                                     </div>
                                 </div>
-                                <div class="col-md-3">
+                                <div class="col-md-3 clearfix d-none d-md-block">
                                     <div class="food-card">
                                         <div class="food-img"><img src="img/pizza.svg" alt="Pizza"></div>
                                         <span class="group-description">Pizza</span>
@@ -114,7 +110,7 @@
                                             York.</span>
                                     </div>
                                 </div>
-                                <div class="col-md-3">
+                                <div class="col-md-3 clearfix d-none d-md-block">
                                     <div class="food-card">
                                         <div class="food-img"><img src="img/sushi.svg" alt="Sushi"></div>
                                         <span class="group-description">Sushi</span>
@@ -123,20 +119,20 @@
                                             place.</span>
                                     </div>
                                 </div>
-                                <div class="col-md-3">
-                                <div class="food-card">
-                                    <div class="food-img"><img src="img/muffin.svg" alt="Muffin"></div>
-                                    <span class="group-description">Bakery</span>
-                                    <hr class="short-grey-line">
-                                    <span class="text-description">Our couriers will deliver fresh and luscious pastries from your
-                                        favorite bakery.</span>
-                                </div>
+                                <div class="col-md-3 clearfix d-none d-md-block">
+                                    <div class="food-card">
+                                        <div class="food-img"><img src="img/muffin.svg" alt="Muffin"></div>
+                                        <span class="group-description">Bakery</span>
+                                        <hr class="short-grey-line">
+                                        <span class="text-description">Our couriers will deliver fresh and luscious pastries from your
+                                            favorite bakery.</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="carousel-item">
                             <div class="row">
-                                <div class="col-md-3">
+                                <div class="col-md-3 clearfix d-none d-md-block">
                                     <div class="food-card">
                                         <div class="food-img"><img src="img/kebab.svg" alt="Kebab"></div>
                                         <span class="group-description">Fast Food</span>
@@ -145,9 +141,34 @@
                                             just 30 minutes.</span>
                                     </div>
                                 </div>
+                                <div class="col-md-3 clearfix d-none d-md-block">
+                                    <div class="food-card">
+                                        <div class="food-img"><img src="img/vegeterian.svg" alt="Vegeterian"></div>
+                                        <span class="group-description">Vegeterian</span>
+                                        <hr class="short-grey-line">
+                                        <span class="text-description">Order the best vegan and vegetarian meals with the fastest delivery
+                                            possible.</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 clearfix d-none d-md-block">
+                                    <div class="food-card">
+                                        <div class="food-img"><img src="img/pizza.svg" alt="Pizza"></div>
+                                        <span class="group-description">Pizza</span>
+                                        <hr class="short-grey-line">
+                                        <span class="text-description">We deliver original pizza from the best Italian restaurants in New
+                                            York.</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 clearfix d-none d-md-block">
+                                    <div class="food-card">
+                                        <div class="food-img"><img src="img/sushi.svg" alt="Sushi"></div>
+                                        <span class="group-description">Sushi</span>
+                                        <hr class="short-grey-line">
+                                        <span class="text-description">Delicious sushi from the best Japanese restaurants delivered to your
+                                            place.</span>
+                                    </div>
+                                </div>
                         </div>
-                        </div>
-                    
                     </div>
                     <a class="left carousel-control-prev" href="#categories" role="button" data-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -158,6 +179,7 @@
                         <span class="visually-hidden">Next</span>
                     </a>
                 </div>
+            </div>
         </section>
 
         <section class="how-it-work container" id="how-it-work">
@@ -226,8 +248,8 @@
                 </div>
             </div>
             <div class="button-img">
-                <button type="button" class="transparent-button btn" data-target="#">More&nbsp;Restaurants<svg
-                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23 18" fill="none" x="0px" y="0px"
+                <button type="button" class="transparent-button btn" data-target="#">More&nbsp;Restaurants
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23 18" fill="none" x="0px" y="0px"
                         style="max-width:100%" height="100%">
                         <path
                             d="M16.3471 0.292877C16.7375 -0.0976257 17.3708 -0.0976257 17.7612 0.292877C18.1518 0.68338 18.1518 1.31656 17.7612 1.70706L13.1652 6.30325C12.9699 6.49857 12.9699 6.81509 13.1652 7.01028C13.3603 7.2056 13.6769 7.2056 13.8723 7.01041L18.4684 2.41422C18.8588 2.02371 19.4921 2.02371 19.8825 2.41422C20.2731 2.80472 20.2731 3.4379 19.8825 3.8284L15.2866 8.42459C15.0912 8.6199 15.0912 8.93643 15.2866 9.13162C15.4816 9.32693 15.7983 9.32693 15.9936 9.13174L20.5898 4.53555C20.9802 4.14505 21.6135 4.14505 22.0038 4.53555C22.3942 4.92606 22.3942 5.55911 22.0038 5.94962L17.0541 10.8994C16.2729 11.6805 15.0065 11.6805 14.2255 10.8994L13.5185 10.1923L12.9936 10.7173L11.5795 9.30313L12.1044 8.77811L11.3972 8.07095C10.6161 7.28995 10.6161 6.02359 11.3972 5.24258L16.3471 0.292877Z"

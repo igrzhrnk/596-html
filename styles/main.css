@@ -181,27 +181,12 @@
     margin: auto;
 }
 
-.categories-group {
-    display: grid;
-    grid-template-columns: 50px 1fr 50px;
-}
-
-.categories-group .carousel-inner {
-    grid-column: 2;
-}
-
-.categories-group .carousel-control-prev {
-    grid-column: 1;
-    position: relative;
-}
-
-.categories-group .carousel-control-next {
-    grid-column: 3;
-    position: relative;
+.carousel-control-prev,
+.carousel-control-next {
+    top: 50%;
 }
 
 .food-card {
-    position: relative;
     display: flex;
     flex-direction: column;
     border-radius: 4px;
@@ -210,7 +195,8 @@
     background-color: #ffffff;
     box-shadow: 0px 11px 15px #ede3d4;
     height: 100%;
-
+    min-width: 11rem;
+    margin: 10px;
 }
 
 .food-card .short-black-line {
@@ -284,6 +270,7 @@
     border-radius: 5px;
     margin: 60px auto;
     padding: 50px 0;
+    width: 85%;
 }
 
 .work-with-us .short-grey-line {
@@ -313,6 +300,7 @@
 
 .work-step .text-description {
     flex-wrap: wrap;
+    text-align: left;
 }
 
 .faq-section .title-description {
@@ -414,23 +402,7 @@
     width: 100%;
 }
 
-.users-feedback .carousel-inner .active,
-.users-feedback .carousel-inner .active + .carousel-item {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    column-gap: 25px;
-    justify-content: center;
-}
-
-.users-feedback .carousel-inner,
-.categories .carousel-inner {
-    width: 95%;
-    margin-left: 2rem;
-    margin-right: 2rem;
-}
-
 .carousel-control-next {
-    margin-right: -6rem;
     border-radius: 50%;
     width: 3rem;
     height: 3rem;
@@ -438,7 +410,6 @@
 }
 
 .carousel-control-prev {
-    margin: -6rem;
     border-radius: 50%;
     width: 3rem;
     height: 3rem;
@@ -533,19 +504,6 @@ input[placeholder] {
         min-width: 120px;
     }
 
-    .grand-description,
-    .aboutus-section,
-    .categories,
-    .how-it-work,
-    .deals,
-    .delivery,
-    .users-feedback,
-    .faq-section,
-    .work-with-us,
-    .contact-section {
-        max-width: 992px;
-    }
-
     .deals {
         display: grid;
         grid-template-rows: 4;
@@ -589,7 +547,7 @@ input[placeholder] {
         width: 100px;
         height: 100px;
     }
-    
+
     .contact-section {
         display: grid;
         grid-template-columns: 60% 40%;
