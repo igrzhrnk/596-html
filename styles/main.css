@@ -90,6 +90,7 @@
     background-image: url(../img/head-bground.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: 0 100%;
     display: grid;
     grid-template-rows: 3;
     padding: 200px 0 100px;
