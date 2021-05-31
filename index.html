@@ -86,9 +86,9 @@
             </div>
             <span class="short-text-description">Choose any cuisine you like, and we'll deliver in no later than 30
                 minutes.</span>
-            <div class="carousel slide" id="categories" data-ride="carousel">
+            <div class="carousel slide" id="categories" data-bs-ride="carousel">
                 <div class="categories-group">
-                    <div class="carousel-inner" role="listbox">
+                    <div class="carousel-inner">
                         <div class="carousel-item active">
                             <div class="row">
                                 <div class="col-12 col-sm-12 col-md-3">
@@ -169,11 +169,11 @@
                                 </div>
                         </div>
                     </div>
-                    <a class="left carousel-control-prev" href="#categories" role="button" data-slide="prev">
+                    <a class="left carousel-control-prev" href="#categories" role="button" data-bs-slide="prev" data-bs-target="#categories">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
                     </a>
-                    <a class="right carousel-control-next" href="#categories" role="button" data-slide="next">
+                    <a class="right carousel-control-next" href="#categories" role="button" data-bs-slide="next" data-bs-target="#categories">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
                     </a>
@@ -305,18 +305,18 @@
         </section>
 
         <section class="users-feedbacks container">
-            <div id="carousel-feedbacks" class="carousel slide" data-ride="carousel">
+            <div id="carousel-feedbacks" class="carousel slide" data-bs-ride="carousel">
 
                 <div class="carousel-inner" role="listbox">
                     <div class="carousel-item active"></div>
                     <div class="carousel-item"></div>
                 </div>
 
-                <a class="left carousel-control-prev" href="#feedbackCarousel" role="button" data-slide="prev">
+                <a class="left carousel-control-prev" href="#feedbackCarousel" role="button" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </a>
-                <a class="right carousel-control-next" href="#feedbackCarousel" role="button" data-slide="next">
+                <a class="right carousel-control-next" href="#feedbackCarousel" role="button" data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </a>
@@ -393,7 +393,7 @@
                     <span class="text-description">foodorder@email.com</span>
                     <span class="text-description">foodorder-support@email.com</span>
                 </div>
-                <button type="button" class="button-link btn btn-success">Become a Partner <img src="img/send-mail.svg"
+                <button type="button" class="button-link btn btn-success" data-bs-toggle="modal" data-bs-target="#send-request">Become a Partner <img src="img/send-mail.svg"
                         alt="send emeil"></button>
             </div>
             <img src="img/illustration.webp" alt="">
@@ -450,14 +450,16 @@
 
     </footer>
 
-    <div class="modal fade" id="send-request" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal fade" id="send-request" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title group-description">Become Ours Partner!</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <div class="modal-header justify-content-end">
+                    <button type="button" class="btn btn-secondary justify-content-end" data-bs-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
+                </div>
+                <div class="modal-header">
+                    <h5 class="modal-title group-description">Become Ours Partner!</h5>
                 </div>
                 <hr class="short-green-line">
                 <div class="modal-body">
@@ -481,11 +483,11 @@
         </div>
     </div>
 
-    <script src="js/feedbacks.js"></script>
-    <script src="js/restaurants.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    <script src="js/feedbacks.js"></script>
+    <script src="js/restaurants.js"></script>
 </body>
 
 </html>

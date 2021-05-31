@@ -1,6 +1,11 @@
 (function() {
     let feedbacks;
 
+    const rangeList = {
+        from: 1,
+        to: 2,
+    }
+
     function loadingFeedbackJSON() {
         const activeFeedbackContainer = document.querySelector('.users-feedbacks .carousel-inner>.carousel-item.active');
         let htmlTemp = '';
@@ -20,6 +25,7 @@
             activeFeedbackContainer.innerHTML = `<div class="row">${htmlTemp}</div>`;
     }
 
+    
         
 
     async function loadFeedbacks() {
