@@ -23,8 +23,7 @@
             <a href="#home"><img src="img/fo-logo.webp" alt="Food Order New York"></a>
         </div>
         <nav class="top-nav-menu navbar navbar-expand-lg navbar-light">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-menu-site"
-                aria-controls="#nav-menu-site" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-menu-site" aria-controls="#nav-menu-site" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="nav-menu-site">
@@ -54,7 +53,7 @@
             <a class="button-link" href="#how-it-work">Learn More</a>
         </section>
 
-        <section class="aboutus-section container">
+        <section class="aboutus-section container" id="aboutus">
             <div class="aboutus-text">
                 <div class="heading-group">
                     <h2 class="title-description">Order Food From Any of 400+ Restaurants.</h2>
@@ -79,14 +78,14 @@
             </div>
         </section>
 
-        <section class="categories container">
+        <section class="categories container" id="categories">
             <div class="heading-group">
                 <h2 class="title-description">Popular Categories.</h2>
                 <hr class="short-green-line">
             </div>
             <span class="short-text-description">Choose any cuisine you like, and we'll deliver in no later than 30
                 minutes.</span>
-            <div class="carousel slide" id="categories" data-bs-ride="carousel">
+            <div class="carousel slide" id="categories-slide" data-bs-ride="carousel">
                 <div class="categories-group carousel-multi-item">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -167,13 +166,14 @@
                                             place.</span>
                                     </div>
                                 </div>
+                            </div>
                         </div>
                     </div>
-                    <a class="left carousel-control-prev" href="#categories" role="button" data-bs-slide="prev" data-bs-target="#categories">
+                    <a class="left carousel-control-prev" href="#categories-slide" role="button" data-bs-slide="prev" data-bs-target="#categories">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
                     </a>
-                    <a class="right carousel-control-next" href="#categories" role="button" data-bs-slide="next" data-bs-target="#categories">
+                    <a class="right carousel-control-next" href="#categories-slide" role="button" data-bs-slide="next" data-bs-target="#categories">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
                     </a>
@@ -197,8 +197,8 @@
                         them in just a few
                         seconds from Google Play or the App Store.</span>
                     <div class="app-link">
-                        <a href=""><img src="img/app-store.png" alt="App Store" srcset=""></a>
-                        <a href=""><img src="img/google-play.png" alt="Google Play" srcset=""></a>
+                        <a href=""><img src="img/app-store.png" alt="App Store"></a>
+                        <a href=""><img src="img/google-play.png" alt="Google Play"></a>
                     </div>
                 </div>
                 <img class="order-point" src="img/order-point.webp" alt="Point of the delivering">
@@ -306,7 +306,6 @@
 
         <section class="users-feedbacks container">
             <div id="carousel-feedbacks" class="carousel slide" data-bs-ride="carousel">
-
                 <div class="carousel-inner" role="listbox">
                     <div class="carousel-item active"></div>
                     <div class="carousel-item"></div>
@@ -330,7 +329,7 @@
             </div>
             <span class="short-text-description">Press the button and send us a message, we will contact you
                 shortly.</span>
-            <button type="button" class="button-link btn btn-success" data-toggle="modal" data-target="#send-request">Send a Request</button>
+            <button type="button" class="button-link btn btn-success" data-bs-toggle="modal" data-bs-target="#send-request">Send a Request</button>
             
         </section>
 
@@ -467,11 +466,11 @@
                         <span class="short-text-description">Want to join 400+ NY restaurants working with us?</span>
                         <span class="short-text-description">Fill out the form:</span>
                     </div>
-                    <form action="">
+                    <form>
                         <div class="form-group">
-                            <input type="text" class="form-control" name="" placeholder="Name">
-                            <input type="tel" class="form-control" name="" placeholder="Phone number">
-                            <input type="email" class="form-control" name="" placeholder="Email">
+                            <input type="text" class="form-control" name="user-name" placeholder="Name">
+                            <input type="tel" class="form-control" name="uesr-phone" placeholder="Phone number">
+                            <input type="email" class="form-control" name="user-email" placeholder="Email">
                         </div>
                     </form>
                 </div>
